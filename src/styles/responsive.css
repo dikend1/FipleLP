@@ -1,0 +1,118 @@
+@media (max-width: 980px) {
+  .nav {
+    display: none;
+  }
+
+  .hero,
+  .use-cases,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-stage {
+    min-height: 620px;
+  }
+
+  .steps-layout {
+    flex-direction: column;
+  }
+
+  .plus {
+    transform: rotate(90deg);
+  }
+
+  .macbook {
+    width: min(460px, 90vw);
+  }
+
+  .step-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header,
+  .hero,
+  .section,
+  .download,
+  .footer,
+  .demo-strip {
+    width: min(100% - 24px, 1180px);
+  }
+
+  .site-header {
+    top: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  h2 {
+    font-size: clamp(42px, 13vw, 62px);
+  }
+
+  .hero {
+    padding-top: 44px;
+  }
+
+  .hero-stage {
+    min-height: 570px;
+    border-radius: 36px;
+  }
+
+  .hero-stage::before {
+    inset: 14px;
+    border-radius: 28px;
+  }
+
+  .hero-card {
+    display: none;
+  }
+
+  .phone-frame {
+    width: 268px;
+    min-height: 550px;
+  }
+
+  .phone-mockup.compact {
+    transform: scale(0.82);
+  }
+
+  .demo-strip {
+    flex-direction: column;
+  }
+
+  .demo-line {
+    width: 1px;
+    height: 42px;
+  }
+
+  .section {
+    padding: 78px 0;
+  }
+
+  .step-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .waitlist {
+    flex-direction: column;
+  }
+
+  .waitlist input {
+    min-height: 50px;
+    text-align: center;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
