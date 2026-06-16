@@ -1,4 +1,32 @@
-@import "./tokens.css";
-@import "./layout.css";
-@import "./components.css";
-@import "./responsive.css";
+@config "../../tailwind.config.js";
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: #111111;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(201, 255, 90, 0.18), transparent 28rem),
+    radial-gradient(circle at 85% 20%, rgba(185, 192, 255, 0.24), transparent 24rem),
+    #f4f4f1;
+  font-family: "Manrope", "Helvetica Neue", Arial, sans-serif;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background-image: radial-gradient(rgba(17, 17, 17, 0.08) 0.8px, transparent 0.8px);
+  background-size: 16px 16px;
+  mask-image: linear-gradient(to bottom, black 0%, transparent 70%);
+}
+
+button,
+input {
+  font: inherit;
+}
