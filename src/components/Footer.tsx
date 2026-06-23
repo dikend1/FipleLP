@@ -3,7 +3,7 @@ import icon from "../assets/fiple-icon.png";
 export function Footer() {
   return (
     <footer className="mx-auto w-[min(1120px,calc(100%_-_40px))] pb-10 max-sm:w-[min(calc(100%_-_24px),1120px)]">
-      <div className="grid grid-cols-[1.3fr_1fr] gap-12 border-t border-line pt-14 max-[860px]:grid-cols-1 max-[860px]:gap-10">
+      <div className="grid grid-cols-[1.3fr_1.2fr] gap-12 border-t border-line pt-14 max-[860px]:grid-cols-1 max-[860px]:gap-10">
         <div className="max-w-[340px]">
           <div className="flex items-center gap-2.5">
             <img src={icon} alt="" className="size-9 drop-shadow-[0_4px_8px_rgba(11,11,15,0.30)]" width={36} height={36} />
@@ -17,7 +17,7 @@ export function Footer() {
             Coming soon · macOS &amp; iPhone
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-3 gap-8 max-sm:grid-cols-2">
           <div>
             <p className="mb-4 font-mono text-[11px] font-medium tracking-[0.12em] text-faint uppercase">Pages</p>
             <ul className="grid gap-3 text-[15px] font-medium text-ink2">
@@ -33,6 +33,14 @@ export function Footer() {
               <li><a className="transition hover:text-blue" href="#download">Join the waitlist</a></li>
               <li><span className="text-faint">Mac app — soon</span></li>
               <li><span className="text-faint">App Store — soon</span></li>
+            </ul>
+          </div>
+          <div>
+            <p className="mb-4 font-mono text-[11px] font-medium tracking-[0.12em] text-faint uppercase">Legal &amp; support</p>
+            <ul className="grid gap-3 text-[15px] font-medium text-ink2">
+              <li><a className="transition hover:text-blue" href="#/support">Help &amp; Support</a></li>
+              <li><a className="transition hover:text-blue" href="#/privacy">Privacy Policy</a></li>
+              <li><a className="transition hover:text-blue" href="#/terms">Terms of Service</a></li>
             </ul>
           </div>
         </div>
