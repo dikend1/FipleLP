@@ -27,26 +27,28 @@ export function MacShowcase() {
     >
       <div className="max-w-[680px]">
         <p className="font-mono text-[12px] font-medium tracking-[0.14em] text-blue uppercase">The Mac app</p>
-        <h2 className="mt-3 font-display text-[clamp(34px,4.6vw,54px)] leading-[1.02] font-bold tracking-[-0.035em] text-ink">
+        <h2 className="mt-3 font-display text-[clamp(34px,4.6vw,54px)] leading-[1.02] font-bold tracking-[-0.035em] text-ink max-sm:text-[32px]">
           Set it up on your Mac.
           <br className="max-sm:hidden" /> Run it from your pocket.
         </h2>
-        <p className="mt-4 max-w-[540px] text-[18px] leading-[1.6] text-muted">
+        <p className="mt-4 max-w-[540px] text-[18px] leading-[1.6] text-muted max-sm:text-[16px] max-sm:leading-[1.55]">
           Build your workspaces and Fiple Bar on the big screen. Everything you arrange here is
           instantly tappable on your iPhone.
         </p>
       </div>
 
       {/* Mac window */}
-      <div className="relative mt-12">
+      <div className="relative mt-12 max-sm:mt-9">
         <div className="absolute inset-x-10 top-10 -z-[1] h-full rounded-[28px] bg-[radial-gradient(circle_at_50%_0%,rgba(46,107,255,0.18),transparent_60%)] blur-2xl" aria-hidden="true" />
-        <div className="overflow-hidden rounded-[14px] border border-line shadow-device">
-          <img
-            src={appMac}
-            alt="Fiple for macOS — the Start Coding, Vibe, Productive, and Games workspaces, the Fiple Bar, Recent activity, and a connected iPhone"
-            className="block w-full"
-            loading="lazy"
-          />
+        <div className="max-sm:-mx-3 max-sm:overflow-x-auto max-sm:pb-4 max-sm:[scrollbar-width:none] max-sm:[&::-webkit-scrollbar]:hidden">
+          <div className="overflow-hidden rounded-[14px] border border-line shadow-device max-sm:min-w-[640px]">
+            <img
+              src={appMac}
+              alt="Fiple for macOS — the Start Coding, Vibe, Productive, and Games workspaces, the Fiple Bar, Recent activity, and a connected iPhone"
+              className="block w-full"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
 
