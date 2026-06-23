@@ -1,0 +1,9 @@
+# Supabase project config.
+# Replace project_id with your project ref (Dashboard → Project Settings → General → Reference ID),
+# then you can deploy with the CLI: `supabase functions deploy waitlist-welcome`
+project_id = "your-project-ref"
+
+[functions.waitlist-welcome]
+# Database Webhooks don't carry a user JWT — we authenticate the call with our own
+# x-webhook-secret header inside the function instead.
+verify_jwt = false
