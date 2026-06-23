@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { DownloadSection } from "./sections/DownloadSection";
 import { HeroSection } from "./sections/HeroSection";
 import { HowItWorksSection } from "./sections/HowItWorksSection";
+import { MacShowcase } from "./sections/MacShowcase";
 import { ProductSection } from "./sections/ProductSection";
 import { UseCasesSection } from "./sections/UseCasesSection";
 
@@ -15,6 +16,7 @@ export default function App() {
         <HeroSection />
         <DemoStrip />
         <HowItWorksSection />
+        <MacShowcase />
         <ProductSection />
         <UseCasesSection />
         <DownloadSection />

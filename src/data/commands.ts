@@ -1,75 +1,23 @@
-import { AppWindow, Bot, Code2, Film, Globe2, Music2, Sparkles, TerminalSquare } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
-
-export type Command = {
-  title: string;
-  description: string;
-  Icon: LucideIcon;
-};
-
 export type Step = {
   label: string;
   title: string;
   body: string;
 };
 
-export const commands: Command[] = [
-  {
-    title: "Code",
-    description: "VS Code, Terminal, localhost, docs",
-    Icon: Code2,
-  },
-  {
-    title: "Browser",
-    description: "Open your saved tabs and dashboards",
-    Icon: Globe2,
-  },
-  {
-    title: "Terminal",
-    description: "Run a shortcut or open project shell",
-    Icon: TerminalSquare,
-  },
-  {
-    title: "AI",
-    description: "Open ChatGPT, Claude, notes, prompt doc",
-    Icon: Bot,
-  },
-  {
-    title: "Focus",
-    description: "Music, writing app, do-not-disturb",
-    Icon: Music2,
-  },
-  {
-    title: "Design",
-    description: "Figma, assets, browser preview",
-    Icon: Sparkles,
-  },
-  {
-    title: "Media",
-    description: "Editing app, folder, export shortcut",
-    Icon: Film,
-  },
-  {
-    title: "Apps",
-    description: "Your favorite Mac apps in one grid",
-    Icon: AppWindow,
-  },
-];
-
 export const steps: Step[] = [
   {
-    label: "Step 1",
-    title: "Install Fiple for macOS",
-    body: "The Mac helper receives commands and launches apps, URLs, shortcuts, and workflows locally.",
+    label: "01",
+    title: "Install Fiple for Mac",
+    body: "The Mac app sits in your menu bar and does the launching. Set up your workspaces and Fiple Bar once.",
   },
   {
-    label: "Step 2",
+    label: "02",
     title: "Pair your iPhone",
-    body: "Enter the pairing code shown on your Mac. Your iPhone becomes your second command surface.",
+    body: "Open Fiple on your iPhone — it scans your local network for your Mac. Enter the 4-digit code to pair.",
   },
   {
-    label: "Step 3",
+    label: "03",
     title: "Tap. Your Mac moves.",
-    body: "Open your daily tools without hunting through windows, tabs, docks, or keyboard shortcuts.",
+    body: "Run a whole workspace or fire a single app from the Fiple Bar. No windows, docks, or Cmd-Tab.",
   },
 ];
