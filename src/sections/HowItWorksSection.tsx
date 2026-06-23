@@ -1,30 +1,52 @@
-import { MacMockup } from "../components/MacMockup";
-import { PhoneMockup } from "../components/PhoneMockup";
+import appPairing from "../assets/app-pairing.png";
 import { steps } from "../data/commands";
 
 export function HowItWorksSection() {
   return (
-    <section className="scroll-mt-32 mx-auto w-[min(1180px,calc(100%_-_40px))] py-28 max-sm:w-[min(calc(100%_-_24px),1180px)] max-sm:py-[78px]" id="how">
-      <div className="mx-auto mb-[42px] max-w-[780px] text-center">
-        <p className="mb-[18px] text-[13px] font-black tracking-[0.16em] text-[#555] uppercase">Simple setup</p>
-        <h2 className="mb-5 font-['Bricolage_Grotesque','Arial_Black',sans-serif] text-[clamp(46px,6vw,86px)] leading-[0.88] font-black tracking-[-0.075em] text-[#111] max-sm:text-[clamp(42px,13vw,62px)]">Download once. Pair once. Launch every day.</h2>
-        <p className="text-xl leading-[1.6] text-[#555]">
-          The landing page is ready now. When the native apps are finished, the waitlist button becomes your download button.
+    <section
+      className="mx-auto w-[min(1120px,calc(100%_-_40px))] scroll-mt-28 py-24 max-sm:w-[min(calc(100%_-_24px),1120px)] max-sm:py-16"
+      id="how"
+    >
+      <div className="max-w-[680px]">
+        <p className="font-mono text-[12px] font-medium tracking-[0.14em] text-blue uppercase">Setup</p>
+        <h2 className="mt-3 font-display text-[clamp(34px,4.6vw,54px)] leading-[1.02] font-bold tracking-[-0.035em] text-ink">
+          Download once. Pair once.
+          <br className="max-sm:hidden" /> Launch every day.
+        </h2>
+        <p className="mt-4 max-w-[520px] text-[18px] leading-[1.6] text-muted">
+          Pairing is the whole setup. With both devices on the same Wi-Fi, your iPhone finds your
+          Mac and connects with a short code — no accounts, no cables.
         </p>
       </div>
-      <div className="my-[70px] mb-12 flex items-center justify-center gap-[clamp(16px,5vw,70px)] max-[1180px]:flex-col max-[1180px]:gap-8">
-        <MacMockup />
-        <div className="text-[46px] font-black max-[1180px]:rotate-90">+</div>
-        <PhoneMockup compact />
-      </div>
-      <div className="grid grid-cols-3 gap-[18px] max-[980px]:grid-cols-2 max-sm:grid-cols-1">
-        {steps.map((step) => (
-          <article className="rounded-[28px] border border-black/10 bg-white/75 p-7 shadow-[0_14px_48px_rgba(17,17,17,0.06)]" key={step.label}>
-            <span className="mb-6 block font-black tracking-[0.12em] text-[#8b8b8b] uppercase">{step.label}</span>
-            <h3 className="mb-2.5 font-['Bricolage_Grotesque','Arial_Black',sans-serif] text-[27px] font-extrabold tracking-[-0.045em]">{step.title}</h3>
-            <p className="text-xl leading-[1.6] text-[#555]">{step.body}</p>
-          </article>
-        ))}
+
+      <div className="mt-12 grid grid-cols-[0.9fr_1.1fr] items-center gap-14 max-[940px]:grid-cols-1 max-[940px]:gap-12">
+        {/* Pairing screenshot */}
+        <div className="relative grid place-items-center max-[940px]:order-2">
+          <div className="absolute h-[70%] w-[70%] rounded-[40%] bg-[radial-gradient(circle,rgba(46,107,255,0.22),transparent_70%)] blur-2xl" aria-hidden="true" />
+          <img
+            src={appPairing}
+            alt="Fiple iPhone pairing screen — scanning the local network for your Mac, with a 4-digit code field"
+            className="relative z-[1] w-[280px] max-sm:w-[256px] [filter:drop-shadow(0_2px_6px_rgba(11,11,15,0.10))_drop-shadow(0_30px_45px_rgba(11,11,15,0.22))]"
+            width={280}
+            loading="lazy"
+          />
+        </div>
+
+        {/* Steps — a real ordered sequence, so numbered */}
+        <ol className="relative grid gap-2 max-[940px]:order-1">
+          <span className="absolute top-6 bottom-6 left-[19px] w-px bg-line max-[940px]:hidden" aria-hidden="true" />
+          {steps.map((step) => (
+            <li key={step.label} className="relative flex gap-5 rounded-2xl p-4 transition hover:bg-white/70">
+              <span className="z-[1] grid size-10 shrink-0 place-items-center rounded-xl border border-line bg-white font-mono text-[14px] font-semibold text-blue shadow-card">
+                {step.label}
+              </span>
+              <div className="pt-0.5">
+                <h3 className="font-display text-[21px] font-semibold tracking-[-0.02em] text-ink">{step.title}</h3>
+                <p className="mt-1.5 text-[16px] leading-[1.55] text-muted">{step.body}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
