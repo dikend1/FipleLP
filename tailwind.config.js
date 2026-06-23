@@ -20,7 +20,7 @@ export default {
         greenSoft: "#e6f8ec",
       },
       fontFamily: {
-        display: ['"Space Grotesk"', '"Inter"', "system-ui", "sans-serif"],
+        display: ['"Inter Tight"', '"Inter"', "system-ui", "sans-serif"],
         body: ['"Inter"', "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "ui-monospace", "monospace"],
       },
