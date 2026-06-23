@@ -1,16 +1,24 @@
+import icon from "../assets/fiple-icon.png";
+
 export function Header() {
   return (
-    <header className="sticky top-4 z-10 mx-auto mt-6 flex w-[min(1180px,calc(100%_-_40px))] items-center justify-between rounded-[26px] border border-black/10 bg-white/75 py-2.5 pr-2.5 pl-3.5 backdrop-blur-[18px] max-sm:top-2.5 max-sm:mt-2.5 max-sm:w-[min(calc(100%_-_24px),1180px)]">
-      <a className="flex items-center gap-3 text-[21px] font-extrabold tracking-[-0.04em]" href="#top" aria-label="Fiple home">
-        <span className="grid size-[38px] place-items-center rounded-xl bg-[#111] text-white shadow-[inset_0_-8px_18px_rgba(255,255,255,0.16)]">F</span>
-        <span>Fiple</span>
+    <header className="sticky top-4 z-50 mx-auto mt-5 flex w-[min(1120px,calc(100%_-_40px))] items-center justify-between rounded-2xl border border-line bg-white/70 py-2.5 pr-2.5 pl-3.5 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_10px_30px_-12px_rgba(11,11,15,0.18)] backdrop-blur-xl max-sm:top-2.5 max-sm:mt-3 max-sm:w-[min(calc(100%_-_24px),1120px)]">
+      <a className="flex items-center gap-2.5" href="#top" aria-label="Fiple home">
+        <img src={icon} alt="" className="size-9 drop-shadow-[0_4px_8px_rgba(11,11,15,0.30)]" width={36} height={36} />
+        <span className="font-display text-[20px] font-bold tracking-[-0.03em] text-ink">Fiple</span>
       </a>
-      <nav className="flex items-center gap-9 text-lg font-semibold text-[#2a2a2a] max-[980px]:hidden" aria-label="Primary navigation">
-        <a href="#how">How it works</a>
-        <a href="#product">Product</a>
-        <a href="#download">Download</a>
+      <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 text-[15px] font-medium text-ink2 md:flex" aria-label="Primary navigation">
+        <a className="rounded-full px-3.5 py-2 transition hover:bg-base2" href="#how">How it works</a>
+        <a className="rounded-full px-3.5 py-2 transition hover:bg-base2" href="#product">Product</a>
+        <a className="rounded-full px-3.5 py-2 transition hover:bg-base2" href="#mac">Mac app</a>
       </nav>
-      <a className="rounded-2xl bg-[#111] px-6 py-[15px] text-[17px] font-bold text-white max-sm:hidden" href="#download">Join waitlist</a>
+      <a
+        className="inline-flex items-center gap-2 rounded-xl bg-ink px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-ink2 active:scale-[0.98]"
+        href="#download"
+      >
+        <span className="size-1.5 rounded-full bg-green" aria-hidden="true" />
+        Join waitlist
+      </a>
     </header>
   );
 }
