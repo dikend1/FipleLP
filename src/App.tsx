@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { DemoStrip } from "./components/DemoStrip";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -32,7 +33,12 @@ export default function App() {
   }, [route]);
 
   if (route !== "home") {
-    return <LegalPage doc={legalDocs[route]} />;
+    return (
+      <>
+        <LegalPage doc={legalDocs[route]} />
+        <Analytics />
+      </>
+    );
   }
 
   return (
@@ -48,6 +54,7 @@ export default function App() {
         <DownloadSection />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 }
