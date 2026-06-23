@@ -32,28 +32,25 @@ export default function App() {
     return () => cancelAnimationFrame(id);
   }, [route]);
 
-  if (route !== "home") {
-    return (
-      <>
-        <LegalPage doc={legalDocs[route]} />
-        <Analytics />
-      </>
-    );
-  }
-
   return (
     <>
-      <Header />
-      <main>
-        <HeroSection />
-        <DemoStrip />
-        <HowItWorksSection />
-        <MacShowcase />
-        <ProductSection />
-        <UseCasesSection />
-        <DownloadSection />
-      </main>
-      <Footer />
+      {route !== "home" ? (
+        <LegalPage doc={legalDocs[route]} />
+      ) : (
+        <>
+          <Header />
+          <main>
+            <HeroSection />
+            <DemoStrip />
+            <HowItWorksSection />
+            <MacShowcase />
+            <ProductSection />
+            <UseCasesSection />
+            <DownloadSection />
+          </main>
+          <Footer />
+        </>
+      )}
       <Analytics />
     </>
   );
