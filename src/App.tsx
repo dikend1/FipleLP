@@ -4,6 +4,7 @@ import { DemoStrip } from "./components/DemoStrip";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { legalDocs } from "./data/legal";
+import { useLang } from "./lib/i18n";
 import { useHashRoute } from "./lib/useHashRoute";
 import { LegalPage } from "./pages/LegalPage";
 import { DownloadSection } from "./sections/DownloadSection";
@@ -15,6 +16,7 @@ import { UseCasesSection } from "./sections/UseCasesSection";
 
 export default function App() {
   const route = useHashRoute();
+  const { lang } = useLang();
 
   useEffect(() => {
     // Run after the browser's own anchor handling so it doesn't get overridden.
@@ -35,7 +37,7 @@ export default function App() {
   if (route !== "home") {
     return (
       <>
-        <LegalPage doc={legalDocs[route]} />
+        <LegalPage doc={legalDocs[lang][route]} />
         <Analytics />
       </>
     );
