@@ -1,21 +1,21 @@
 import appPairing from "../assets/app-pairing.png";
-import { steps } from "../data/commands";
+import { useT } from "../lib/i18n";
 
 export function HowItWorksSection() {
+  const t = useT();
   return (
     <section
       className="mx-auto w-[min(1120px,calc(100%_-_40px))] scroll-mt-28 py-24 max-sm:w-[min(calc(100%_-_24px),1120px)] max-sm:py-16"
       id="how"
     >
       <div className="max-w-[680px]">
-        <p className="font-mono text-[12px] font-medium tracking-[0.14em] text-blue uppercase">Setup</p>
+        <p className="font-mono text-[12px] font-medium tracking-[0.14em] text-blue uppercase">{t.how.eyebrow}</p>
         <h2 className="mt-3 font-display text-[clamp(34px,4.6vw,54px)] leading-[1.02] font-bold tracking-[-0.035em] text-ink">
-          Download once. Pair once.
-          <br className="max-sm:hidden" /> Launch every day.
+          {t.how.titleLine1}
+          <br className="max-sm:hidden" /> {t.how.titleLine2}
         </h2>
         <p className="mt-4 max-w-[520px] text-[18px] leading-[1.6] text-muted">
-          Pairing is the whole setup. With both devices on the same Wi-Fi, your iPhone finds your
-          Mac and connects with a short code — no accounts, no cables.
+          {t.how.subtitle}
         </p>
       </div>
 
@@ -35,10 +35,10 @@ export function HowItWorksSection() {
         {/* Steps — a real ordered sequence, so numbered */}
         <ol className="relative grid gap-2 max-[940px]:order-1">
           <span className="absolute top-6 bottom-6 left-[19px] w-px bg-line max-[940px]:hidden" aria-hidden="true" />
-          {steps.map((step) => (
-            <li key={step.label} className="relative flex gap-5 rounded-2xl p-4 transition hover:bg-white/70">
+          {t.how.steps.map((step, i) => (
+            <li key={i} className="relative flex gap-5 rounded-2xl p-4 transition hover:bg-white/70">
               <span className="z-[1] grid size-10 shrink-0 place-items-center rounded-xl border border-line bg-white font-mono text-[14px] font-semibold text-blue shadow-card">
-                {step.label}
+                {String(i + 1).padStart(2, "0")}
               </span>
               <div className="pt-0.5">
                 <h3 className="font-display text-[21px] font-semibold tracking-[-0.02em] text-ink">{step.title}</h3>
