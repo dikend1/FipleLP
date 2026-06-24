@@ -2,7 +2,9 @@ import { ArrowLeft } from "lucide-react";
 import type { ReactNode } from "react";
 import icon from "../assets/fiple-icon.png";
 import { Footer } from "../components/Footer";
+import { LangToggle } from "../components/LangToggle";
 import { SUPPORT_EMAIL, type LegalDoc } from "../data/legal";
+import { useT } from "../lib/i18n";
 
 function withEmailLinks(text: string): ReactNode {
   const parts = text.split(SUPPORT_EMAIL);
@@ -20,6 +22,7 @@ function withEmailLinks(text: string): ReactNode {
 }
 
 export function LegalPage({ doc }: { doc: LegalDoc }) {
+  const t = useT();
   return (
     <>
       <header className="sticky top-4 z-50 mx-auto mt-5 flex w-[min(1120px,calc(100%_-_40px))] items-center justify-between rounded-2xl border border-line bg-white/70 py-2.5 pr-3.5 pl-3.5 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_10px_30px_-12px_rgba(11,11,15,0.18)] backdrop-blur-xl max-sm:top-2.5 max-sm:mt-3 max-sm:w-[min(calc(100%_-_24px),1120px)]">
@@ -27,9 +30,12 @@ export function LegalPage({ doc }: { doc: LegalDoc }) {
           <img src={icon} alt="" className="size-9 drop-shadow-[0_4px_8px_rgba(11,11,15,0.30)]" width={36} height={36} />
           <span className="font-display text-[20px] font-bold tracking-[-0.03em] text-ink">Fiple</span>
         </a>
-        <a className="inline-flex items-center gap-1.5 rounded-xl border border-line bg-white px-4 py-2.5 text-[15px] font-semibold text-ink transition hover:border-ink/20 hover:shadow-card active:scale-[0.98]" href="#top">
-          <ArrowLeft size={16} /> Back to home
-        </a>
+        <div className="flex items-center gap-2.5">
+          <LangToggle />
+          <a className="inline-flex items-center gap-1.5 rounded-xl border border-line bg-white px-4 py-2.5 text-[15px] font-semibold text-ink transition hover:border-ink/20 hover:shadow-card active:scale-[0.98] max-sm:px-3" href="#top">
+            <ArrowLeft size={16} /> {t.legalPage.back}
+          </a>
+        </div>
       </header>
 
       <main className="mx-auto w-[min(760px,calc(100%_-_40px))] pt-16 pb-24 max-sm:w-[min(calc(100%_-_24px),760px)] max-sm:pt-10">
@@ -39,7 +45,7 @@ export function LegalPage({ doc }: { doc: LegalDoc }) {
         </h1>
         <p className="mt-4 text-[18px] leading-[1.6] text-muted">{doc.tagline}</p>
         {doc.updated && (
-          <p className="mt-3 font-mono text-[12px] text-faint">Last updated {doc.updated}</p>
+          <p className="mt-3 font-mono text-[12px] text-faint">{t.legalPage.updated} {doc.updated}</p>
         )}
 
         <div className="mt-12 grid gap-10">
