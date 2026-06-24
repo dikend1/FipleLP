@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import { LangProvider } from "./lib/i18n";
 import "./styles/index.css";
 
 const rootElement = document.getElementById("root");
@@ -15,6 +16,8 @@ window.scrollTo(0, 0);
 
 createRoot(rootElement).render(
   <React.StrictMode>
-    <App />
+    <LangProvider>
+      <App />
+    </LangProvider>
   </React.StrictMode>,
 );
