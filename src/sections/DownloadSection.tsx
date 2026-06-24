@@ -2,12 +2,15 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import { ArrowRight, Check } from "lucide-react";
 import { supabase } from "../lib/supabase";
+import { useT } from "../lib/i18n";
 
 type SubmitState = "idle" | "submitting" | "success" | "error";
+type StatusKey = "default" | "emptyEmail" | "adding" | "already" | "success" | "error";
 
 export function DownloadSection() {
+  const t = useT();
   const [submitState, setSubmitState] = useState<SubmitState>("idle");
-  const [message, setMessage] = useState("No spam — just beta access and launch updates.");
+  const [statusKey, setStatusKey] = useState<StatusKey>("default");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -17,12 +20,12 @@ export function DownloadSection() {
 
     if (!email) {
       setSubmitState("error");
-      setMessage("Enter your email to join the waitlist.");
+      setStatusKey("emptyEmail");
       return;
     }
 
     setSubmitState("submitting");
-    setMessage("Adding you to the waitlist…");
+    setStatusKey("adding");
 
     try {
       const { error } = await supabase.from("waitlist").insert({ email });
@@ -30,7 +33,7 @@ export function DownloadSection() {
       if (error) {
         if (error.code === "23505") {
           setSubmitState("success");
-          setMessage("You're already on the list. We'll email you when beta access opens.");
+          setStatusKey("already");
           form.reset();
           return;
         }
@@ -39,16 +42,17 @@ export function DownloadSection() {
       }
 
       setSubmitState("success");
-      setMessage("You're on the list. We'll email you when beta access opens.");
+      setStatusKey("success");
       form.reset();
     } catch (error) {
       console.error("Waitlist signup failed", error);
       setSubmitState("error");
-      setMessage("Something went wrong. Try again, or email us directly.");
+      setStatusKey("error");
     }
   }
 
   const success = submitState === "success";
+  const message = t.download.status[statusKey];
 
   return (
     <section
@@ -63,13 +67,13 @@ export function DownloadSection() {
         <div className="relative">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 font-mono text-[12px] font-medium text-white/80">
             <span className="size-1.5 rounded-full bg-green" aria-hidden="true" />
-            Coming soon
+            {t.download.badge}
           </p>
           <h2 className="mx-auto mt-5 max-w-[760px] font-display text-[clamp(34px,5vw,60px)] leading-[1.02] font-bold tracking-[-0.035em] text-white">
-            Be first to get Fiple for Mac &amp; iPhone.
+            {t.download.title}
           </h2>
           <p className="mx-auto mt-4 max-w-[560px] text-[18px] leading-[1.6] text-white/65">
-            Join the beta list now. When the apps ship, this becomes your direct download.
+            {t.download.subtitle}
           </p>
 
           <form
@@ -79,7 +83,7 @@ export function DownloadSection() {
             <input
               name="email"
               className="w-full min-w-0 bg-transparent px-4 text-[16px] text-white placeholder:text-white/40 focus:outline-none max-sm:min-h-[48px] max-sm:text-center"
-              aria-label="Email address"
+              aria-label={t.download.emailAria}
               type="email"
               placeholder="you@example.com"
               required
@@ -89,7 +93,7 @@ export function DownloadSection() {
               disabled={submitState === "submitting"}
               type="submit"
             >
-              {submitState === "submitting" ? "Joining…" : "Join waitlist"}
+              {submitState === "submitting" ? t.download.submitting : t.download.submitIdle}
               {submitState !== "submitting" && <ArrowRight size={17} />}
             </button>
           </form>
@@ -104,12 +108,12 @@ export function DownloadSection() {
             {message}
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5" aria-label="Future downloads">
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5" aria-label={t.download.futureAria}>
             <span className="rounded-xl border border-dashed border-white/20 px-4 py-2.5 font-mono text-[13px] text-white/45">
-              Download for Mac — soon
+              {t.download.macSoon}
             </span>
             <span className="rounded-xl border border-dashed border-white/20 px-4 py-2.5 font-mono text-[13px] text-white/45">
-              App Store — soon
+              {t.download.appStoreSoon}
             </span>
           </div>
         </div>

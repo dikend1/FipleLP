@@ -1,39 +1,24 @@
 import { Boxes, LayoutGrid, Smartphone } from "lucide-react";
 import appMac from "../assets/app-mac.png";
+import { useT } from "../lib/i18n";
 
-const callouts = [
-  {
-    Icon: LayoutGrid,
-    title: "Workspaces",
-    body: "Group the apps, sites, and shortcuts you open together. Run the whole set with one tap.",
-  },
-  {
-    Icon: Boxes,
-    title: "Fiple Bar",
-    body: "Pin single apps — Telegram, VS Code, Claude, ChatGPT — for instant one-tap launches.",
-  },
-  {
-    Icon: Smartphone,
-    title: "Devices",
-    body: "Your paired iPhone shows up live as Connected. Pair, unpair, and manage it from one place.",
-  },
-];
+const calloutIcons = [LayoutGrid, Boxes, Smartphone];
 
 export function MacShowcase() {
+  const t = useT();
   return (
     <section
       className="mx-auto w-[min(1120px,calc(100%_-_40px))] scroll-mt-28 py-24 max-sm:w-[min(calc(100%_-_24px),1120px)] max-sm:py-16"
       id="mac"
     >
       <div className="max-w-[680px]">
-        <p className="font-mono text-[12px] font-medium tracking-[0.14em] text-blue uppercase">The Mac app</p>
+        <p className="font-mono text-[12px] font-medium tracking-[0.14em] text-blue uppercase">{t.mac.eyebrow}</p>
         <h2 className="mt-3 font-display text-[clamp(34px,4.6vw,54px)] leading-[1.02] font-bold tracking-[-0.035em] text-ink max-sm:text-[32px]">
-          Set it up on your Mac.
-          <br className="max-sm:hidden" /> Run it from your pocket.
+          {t.mac.titleLine1}
+          <br className="max-sm:hidden" /> {t.mac.titleLine2}
         </h2>
         <p className="mt-4 max-w-[540px] text-[18px] leading-[1.6] text-muted max-sm:text-[16px] max-sm:leading-[1.55]">
-          Build your workspaces and Fiple Bar on the big screen. Everything you arrange here is
-          instantly tappable on your iPhone.
+          {t.mac.subtitle}
         </p>
       </div>
 
@@ -53,15 +38,18 @@ export function MacShowcase() {
       </div>
 
       <div className="mt-12 grid grid-cols-3 gap-5 max-[760px]:grid-cols-1">
-        {callouts.map(({ Icon, title, body }) => (
-          <article key={title} className="rounded-2xl border border-line bg-white/70 p-6 shadow-card backdrop-blur-sm">
-            <span className="grid size-11 place-items-center rounded-xl bg-blueSoft text-blue">
-              <Icon size={20} strokeWidth={2} />
-            </span>
-            <h3 className="mt-5 font-display text-[20px] font-semibold tracking-[-0.02em] text-ink">{title}</h3>
-            <p className="mt-2 text-[15.5px] leading-[1.55] text-muted">{body}</p>
-          </article>
-        ))}
+        {t.mac.callouts.map(({ title, body }, i) => {
+          const Icon = calloutIcons[i];
+          return (
+            <article key={i} className="rounded-2xl border border-line bg-white/70 p-6 shadow-card backdrop-blur-sm">
+              <span className="grid size-11 place-items-center rounded-xl bg-blueSoft text-blue">
+                <Icon size={20} strokeWidth={2} />
+              </span>
+              <h3 className="mt-5 font-display text-[20px] font-semibold tracking-[-0.02em] text-ink">{title}</h3>
+              <p className="mt-2 text-[15.5px] leading-[1.55] text-muted">{body}</p>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
