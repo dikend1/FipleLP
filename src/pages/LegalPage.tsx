@@ -6,19 +6,35 @@ import { LangToggle } from "../components/LangToggle";
 import { SUPPORT_EMAIL, type LegalDoc } from "../data/legal";
 import { useT } from "../lib/i18n";
 
-function withEmailLinks(text: string): ReactNode {
-  const parts = text.split(SUPPORT_EMAIL);
+const EMAIL_RE = SUPPORT_EMAIL.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const LINK_RE = new RegExp(`(${EMAIL_RE}|https?:\\/\\/[^\\s]+)`, "g");
+
+// Linkify the support email and any http(s) URL inside a block of text.
+function withLinks(text: string): ReactNode {
+  const parts = text.split(LINK_RE);
   if (parts.length === 1) return text;
-  return parts.map((part, i) => (
-    <span key={i}>
-      {part}
-      {i < parts.length - 1 && (
-        <a className="font-medium text-blue hover:underline" href={`mailto:${SUPPORT_EMAIL}`}>
-          {SUPPORT_EMAIL}
+  return parts.map((part, i) => {
+    if (part === SUPPORT_EMAIL) {
+      return (
+        <a key={i} className="font-medium text-blue hover:underline" href={`mailto:${SUPPORT_EMAIL}`}>
+          {part}
         </a>
-      )}
-    </span>
-  ));
+      );
+    }
+    if (/^https?:\/\//.test(part)) {
+      // Keep trailing punctuation (e.g. a sentence period) out of the link target.
+      const [, url = part, trail = ""] = part.match(/^(.*?)([.,;:!?)]*)$/) ?? [];
+      return (
+        <span key={i}>
+          <a className="font-medium text-blue hover:underline" href={url} target="_blank" rel="noopener noreferrer">
+            {url}
+          </a>
+          {trail}
+        </span>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
 }
 
 export function LegalPage({ doc }: { doc: LegalDoc }) {
@@ -55,13 +71,13 @@ export function LegalPage({ doc }: { doc: LegalDoc }) {
               <div className="mt-3 grid gap-3">
                 {section.blocks.map((block, i) =>
                   block.type === "p" ? (
-                    <p key={i} className="text-[16.5px] leading-[1.65] text-ink2">{withEmailLinks(block.text)}</p>
+                    <p key={i} className="text-[16.5px] leading-[1.65] text-ink2">{withLinks(block.text)}</p>
                   ) : (
                     <ul key={i} className="grid gap-2.5 pl-1">
                       {block.items.map((item, j) => (
                         <li key={j} className="flex gap-3 text-[16.5px] leading-[1.6] text-ink2">
                           <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-blue" aria-hidden="true" />
-                          <span>{withEmailLinks(item)}</span>
+                          <span>{withLinks(item)}</span>
                         </li>
                       ))}
                     </ul>
