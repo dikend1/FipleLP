@@ -11,96 +11,80 @@ export type LegalKey = "privacy" | "terms" | "support";
 type Lang = "en" | "ru";
 
 export const SUPPORT_EMAIL = "support@fiple.app";
-const UPDATED_EN = "June 23, 2026";
-const UPDATED_RU = "23 июня 2026";
+const UPDATED_EN = "June 25, 2026";
+const UPDATED_RU = "25 июня 2026";
 
 const en: Record<LegalKey, LegalDoc> = {
   privacy: {
     eyebrow: "Legal",
     title: "Privacy Policy",
-    tagline: "How Fiple handles your data — in plain language.",
+    tagline: "Fiple respects your privacy.",
     updated: UPDATED_EN,
     sections: [
       {
-        heading: "The short version",
+        heading: "Information stored on your devices",
         blocks: [
-          { type: "p", text: "Fiple is a Mac and iPhone app that launches your Mac apps, websites, and shortcuts from your phone. We collect as little as possible — today, that's the email you give us to join the waitlist." },
-          { type: "p", text: "Your workspaces and the things you launch stay on your own devices. We don't see them." },
+          { type: "p", text: "Fiple does not require an account." },
+          { type: "p", text: "Your workspaces, selected apps, website links, chosen shortcuts, launch history, preferences, and pairing information are stored locally on your iPhone and Mac." },
+          { type: "p", text: "This information is exchanged directly between your paired devices when needed for Fiple to function. Fiple does not upload or store this information on Fiple servers." },
         ],
       },
       {
-        heading: "What we collect",
+        heading: "Local network communication",
         blocks: [
-          {
-            type: "ul",
-            items: [
-              "Waitlist email — when you join the waitlist, we store your email address so we can send beta access and launch updates.",
-              "Basic, privacy-respecting usage data — if enabled, aggregate analytics that help us understand how this site is used. This never includes the contents of your workspaces.",
-            ],
-          },
-          { type: "p", text: "You don't need an account to try the apps." },
+          { type: "p", text: "Fiple uses your local network to communicate directly between your paired iPhone and Mac." },
+          { type: "p", text: "This communication is used only to pair your devices, synchronize Fiple content, and send commands that you initiate." },
         ],
       },
       {
-        heading: "How pairing keeps your data local",
+        heading: "Apps and shortcuts on your Mac",
         blocks: [
-          { type: "p", text: "Fiple pairs your iPhone and Mac directly over your local network using a short code. When you tap a workspace or app, the command goes straight to your Mac, which does the launching." },
-          { type: "p", text: "Your app list, workspaces, shortcuts, and activity stay on your devices. We don't collect, store, or transmit them to our servers." },
+          { type: "p", text: "To let you build tiles, Fiple reads the list of applications installed on your Mac and, with your permission, the names of your Apple Shortcuts." },
+          { type: "p", text: "This information stays on your Mac. Fiple reads only the names of your Shortcuts, never their contents, and never sends this information anywhere. macOS will ask you to allow access to Shortcuts the first time; you can decline and enter a shortcut name manually instead." },
         ],
       },
       {
-        heading: "How we use your information",
+        heading: "Website icons",
         blocks: [
-          {
-            type: "ul",
-            items: [
-              "Operate the waitlist and send you beta and launch updates.",
-              "Respond to your support requests.",
-              "Keep the service secure and working.",
-            ],
-          },
+          { type: "p", text: "When displaying icons for websites, Fiple may request favicon images from Google's Favicon Service. This request is made directly from your device to Google, not through Fiple servers." },
+          { type: "p", text: "As part of that request, Google may receive the website domain and standard network information, such as your IP address." },
+          { type: "p", text: "Fiple does not store the website domain or network information from these requests. Google processes this information according to Google's Privacy Policy." },
         ],
       },
       {
-        heading: "Sharing",
+        heading: "Analytics and tracking",
         blocks: [
-          { type: "p", text: "We don't sell your personal information. We rely on a few trusted providers to run Fiple — for example, to store the waitlist and send email — and they only process your data on our behalf." },
+          { type: "p", text: "Fiple does not use advertising, tracking technologies, or third-party analytics SDKs in its iPhone or Mac applications." },
         ],
       },
       {
-        heading: "Keeping and deleting your data",
+        heading: "Waitlist and email updates",
         blocks: [
-          { type: "p", text: "We keep your waitlist email until you unsubscribe or ask us to delete it. Email us anytime and we'll remove you." },
+          { type: "p", text: "The Fiple website may offer an optional waitlist." },
+          { type: "p", text: "If you choose to join, we collect your email address to send product updates, beta invitations, and launch announcements." },
+          { type: "p", text: "Your email address is securely stored using Supabase, our service provider for operating the waitlist. We never sell or share your email address for advertising." },
+          { type: "p", text: "You may unsubscribe at any time using the unsubscribe link included in our emails or by contacting us directly. Upon request, we will delete your email address from our records." },
         ],
       },
       {
         heading: "Your choices",
         blocks: [
-          {
-            type: "ul",
-            items: [
-              "Unsubscribe from any email we send.",
-              "Ask us to access or delete the data we hold about you.",
-            ],
-          },
+          { type: "p", text: "You can disconnect paired devices within Fiple to remove pairing information." },
+          { type: "p", text: "Because Fiple does not have access to your locally stored app data, you can manage or remove other local data using your device's standard app management tools." },
         ],
       },
       {
         heading: "Children",
         blocks: [
-          { type: "p", text: "Fiple isn't directed to children, and we don't knowingly collect data from anyone under 13." },
-        ],
-      },
-      {
-        heading: "Changes to this policy",
-        blocks: [
-          { type: "p", text: "If we change this policy, we'll update the date above and, for significant changes, let you know." },
+          { type: "p", text: "Fiple is not directed to children under 13 and does not knowingly collect personal information from them." },
         ],
       },
       {
         heading: "Contact",
         blocks: [
-          { type: "p", text: `Questions about privacy? Email us at ${SUPPORT_EMAIL}.` },
+          { type: "p", text: "For privacy-related questions or requests, contact:" },
+          { type: "p", text: SUPPORT_EMAIL },
+          { type: "p", text: "Owner: Dias Maksatov, Kazakhstan" },
         ],
       },
     ],
@@ -109,68 +93,71 @@ const en: Record<LegalKey, LegalDoc> = {
   terms: {
     eyebrow: "Legal",
     title: "Terms of Service",
-    tagline: "The agreement for using Fiple and joining the waitlist.",
+    tagline: "The agreement for using the Fiple apps.",
     updated: UPDATED_EN,
     sections: [
       {
-        heading: "Agreement",
+        heading: "Acceptance of terms",
         blocks: [
-          { type: "p", text: "By joining the Fiple waitlist or using the Fiple apps, you agree to these terms. If you don't agree, please don't use the service." },
+          { type: "p", text: "By downloading, installing, or using the Fiple applications, you agree to these Terms of Service." },
+          { type: "p", text: "If you do not agree with these terms, please do not use Fiple." },
         ],
       },
       {
-        heading: "What Fiple is",
+        heading: "Description of service",
         blocks: [
-          { type: "p", text: "Fiple is a Mac and iPhone app that lets you launch your Mac apps, websites, and shortcuts from your iPhone. It's currently in development, and the waitlist gives you early access when it's ready." },
+          { type: "p", text: "Fiple is a Mac and iPhone application that lets you use an iPhone to launch apps, open websites, and run Apple Shortcuts, and to restore user-configured workspaces on a paired Mac over a local network." },
+          { type: "p", text: "A workspace is a tile that performs one or more of these actions." },
         ],
       },
       {
-        heading: "Beta software",
+        heading: "User responsibility",
         blocks: [
-          { type: "p", text: "Fiple is provided on an “as is” and “as available” basis. Early versions may change, contain bugs, or be unavailable at times. We don't make warranties about the apps." },
-        ],
-      },
-      {
-        heading: "Using Fiple responsibly",
-        blocks: [
+          { type: "p", text: "You are responsible for:" },
           {
             type: "ul",
             items: [
-              "Use the apps lawfully and only with devices you own or are allowed to control.",
-              "Don't attempt to disrupt, abuse, or gain unauthorized access to the service or other people's devices.",
-              "You're responsible for the workspaces you create and the actions you launch.",
+              "Maintaining access to devices you own or are authorized to control.",
+              "Managing the apps, websites, shortcuts, and workspaces you configure.",
+              "The behavior of any Apple Shortcut you choose to run through Fiple.",
+              "Using Fiple in compliance with applicable laws and regulations.",
+              "Not attempting to disrupt, abuse, or gain unauthorized access to Fiple or another person's devices.",
             ],
           },
         ],
       },
       {
-        heading: "The waitlist",
+        heading: "Availability",
         blocks: [
-          { type: "p", text: "When you join the waitlist, you're asking us to email you about beta access and launch news. You can unsubscribe at any time." },
-        ],
-      },
-      {
-        heading: "Our brand and content",
-        blocks: [
-          { type: "p", text: "The Fiple name, logo, apps, and this website belong to us. Please don't copy or reuse them without permission." },
+          { type: "p", text: "Fiple is provided on an \"as is\" and \"as available\" basis." },
+          { type: "p", text: "We may update, modify, suspend, or discontinue features at any time without prior notice." },
         ],
       },
       {
         heading: "Limitation of liability",
         blocks: [
-          { type: "p", text: "To the maximum extent permitted by law, Fiple isn't liable for any indirect, incidental, or consequential damages arising from your use of the apps or website." },
+          { type: "p", text: "To the maximum extent permitted by applicable law, Fiple and its owner shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of Fiple." },
         ],
       },
       {
-        heading: "Changes to these terms",
+        heading: "Intellectual property",
         blocks: [
-          { type: "p", text: "We may update these terms. If we do, we'll change the date above. Continuing to use Fiple means you accept the updated terms." },
+          { type: "p", text: "Fiple, its branding, design, and software are protected by applicable intellectual property laws and remain the property of Dias Maksatov or the relevant rights holders." },
+          { type: "p", text: "Apple and Apple Shortcuts are trademarks of Apple Inc. Fiple is not affiliated with or endorsed by Apple Inc." },
+        ],
+      },
+      {
+        heading: "Governing law",
+        blocks: [
+          { type: "p", text: "These Terms are governed by the laws of the Republic of Kazakhstan, without regard to conflict-of-law principles." },
         ],
       },
       {
         heading: "Contact",
         blocks: [
-          { type: "p", text: `Questions about these terms? Email us at ${SUPPORT_EMAIL}.` },
+          { type: "p", text: "Questions regarding these Terms may be sent to:" },
+          { type: "p", text: SUPPORT_EMAIL },
+          { type: "p", text: "Owner: Dias Maksatov" },
         ],
       },
     ],
@@ -179,56 +166,54 @@ const en: Record<LegalKey, LegalDoc> = {
   support: {
     eyebrow: "Support",
     title: "Help & Support",
-    tagline: "Get help with pairing, setup, and everything else.",
+    tagline: "Thank you for using Fiple.",
     sections: [
       {
-        heading: "Contact us",
+        heading: "How Fiple works",
         blocks: [
-          { type: "p", text: `The fastest way to reach us is email. Write to ${SUPPORT_EMAIL} and we'll get back to you, usually within a couple of business days.` },
+          { type: "p", text: "Fiple lets you use your iPhone to launch apps, open websites, and run Apple Shortcuts, and to instantly restore workspaces on your paired Mac over your local network." },
         ],
       },
       {
-        heading: "Setup at a glance",
+        heading: "Why can't Fiple find my Mac?",
         blocks: [
+          { type: "p", text: "Make sure:" },
           {
             type: "ul",
             items: [
-              "Install Fiple for Mac — it lives in your menu bar.",
-              "Open Fiple on your iPhone, with both devices on the same Wi-Fi.",
-              "Enter the 4-digit code shown on your Mac to pair.",
-              "Tap a workspace or app to launch it on your Mac.",
+              "Fiple is open on your Mac and appears in the menu bar.",
+              "Your iPhone and Mac are connected to the same local network.",
+              "Local Network access is enabled for Fiple on your iPhone.",
             ],
           },
         ],
       },
       {
-        heading: "Fiple can't find my Mac",
+        heading: "How do I reconnect to my Mac?",
         blocks: [
-          { type: "p", text: "Make sure both devices are on the same Wi-Fi network, the Fiple app is open on your Mac, and you've allowed Local Network access for Fiple on your iPhone (Settings → Fiple)." },
+          { type: "p", text: "Fiple normally reconnects automatically when both devices are back on the same local network." },
+          { type: "p", text: "If you disconnected manually, open Fiple on your Mac, find the pairing code in the menu-bar app, and enter that code in Fiple on your iPhone." },
         ],
       },
       {
-        heading: "What do I need to use Fiple?",
+        heading: "How do I add an Apple Shortcut to a tile?",
         blocks: [
-          { type: "p", text: "A Mac and an iPhone on the same network. The Mac app does the launching; your iPhone is the remote." },
+          { type: "p", text: "On your Mac, add a Shortcut action and choose one from the list of your shortcuts. The first time, macOS asks you to allow Fiple to access Shortcuts — allow it to see the list. If you prefer not to, you can simply type the exact name of the shortcut instead." },
         ],
       },
       {
-        heading: "Is Fiple available yet?",
+        heading: "Why won't an app, website, or shortcut open?",
         blocks: [
-          { type: "p", text: "Fiple is coming soon for macOS and iPhone. Join the waitlist and we'll email you the moment beta access opens." },
+          { type: "p", text: "Make sure Fiple is open on your Mac and your iPhone shows that it is connected." },
+          { type: "p", text: "Also check that selected apps are still installed, and that any shortcut still exists in the Shortcuts app with the same name." },
         ],
       },
       {
-        heading: "How does my iPhone talk to my Mac?",
+        heading: "Contact",
         blocks: [
-          { type: "p", text: "Directly over your local network — there's no cloud relay for launching, and your workspace contents stay on your devices." },
-        ],
-      },
-      {
-        heading: "How do I leave the waitlist?",
-        blocks: [
-          { type: "p", text: `Use the unsubscribe link in any email, or write to ${SUPPORT_EMAIL}.` },
+          { type: "p", text: "If you need help, have feedback, or found a bug, contact:" },
+          { type: "p", text: SUPPORT_EMAIL },
+          { type: "p", text: "We aim to respond as quickly as possible." },
         ],
       },
     ],
@@ -239,89 +224,73 @@ const ru: Record<LegalKey, LegalDoc> = {
   privacy: {
     eyebrow: "Правовое",
     title: "Политика конфиденциальности",
-    tagline: "Как Fiple обращается с вашими данными — простым языком.",
+    tagline: "Fiple уважает вашу приватность.",
     updated: UPDATED_RU,
     sections: [
       {
-        heading: "Коротко",
+        heading: "Данные на ваших устройствах",
         blocks: [
-          { type: "p", text: "Fiple — это приложение для Mac и iPhone, которое запускает приложения, сайты и шорткаты вашего Mac прямо с телефона. Мы собираем минимум — сегодня это email, который вы оставляете, чтобы попасть в список ожидания." },
-          { type: "p", text: "Ваши рабочие пространства и то, что вы запускаете, остаются на ваших устройствах. Мы их не видим." },
+          { type: "p", text: "Fiple не требует аккаунта." },
+          { type: "p", text: "Ваши рабочие пространства, выбранные приложения, ссылки на сайты, выбранные шорткаты, история запусков, настройки и данные сопряжения хранятся локально на вашем iPhone и Mac." },
+          { type: "p", text: "Эти данные передаются напрямую между сопряжёнными устройствами, когда это нужно для работы Fiple. Fiple не загружает и не хранит их на своих серверах." },
         ],
       },
       {
-        heading: "Что мы собираем",
+        heading: "Связь по локальной сети",
         blocks: [
-          {
-            type: "ul",
-            items: [
-              "Email из списка ожидания — когда вы записываетесь, мы сохраняем ваш адрес, чтобы отправлять бета-доступ и новости о запуске.",
-              "Базовая статистика, уважающая приватность — если она включена, это агрегированная аналитика, помогающая понять, как используется сайт. Она никогда не включает содержимое ваших рабочих пространств.",
-            ],
-          },
-          { type: "p", text: "Чтобы попробовать приложения, аккаунт не нужен." },
+          { type: "p", text: "Fiple использует вашу локальную сеть для прямого обмена данными между сопряжёнными iPhone и Mac." },
+          { type: "p", text: "Эта связь используется только для сопряжения устройств, синхронизации содержимого Fiple и отправки команд, которые вы инициируете." },
         ],
       },
       {
-        heading: "Как сопряжение держит данные локально",
+        heading: "Приложения и шорткаты на вашем Mac",
         blocks: [
-          { type: "p", text: "Fiple связывает iPhone и Mac напрямую по локальной сети с помощью короткого кода. Когда вы тапаете рабочее пространство или приложение, команда идёт прямо на ваш Mac, который выполняет запуск." },
-          { type: "p", text: "Список приложений, рабочие пространства, шорткаты и активность остаются на ваших устройствах. Мы не собираем, не храним и не передаём их на наши серверы." },
+          { type: "p", text: "Чтобы вы могли создавать плитки, Fiple читает список приложений, установленных на вашем Mac, и, с вашего разрешения, названия ваших команд Apple Shortcuts." },
+          { type: "p", text: "Эти данные остаются на вашем Mac. Fiple читает только названия ваших шорткатов, но не их содержимое, и никуда не отправляет эту информацию. При первом обращении macOS попросит разрешить доступ к «Командам»; вы можете отказать и ввести название шортката вручную." },
         ],
       },
       {
-        heading: "Как мы используем информацию",
+        heading: "Иконки сайтов",
         blocks: [
-          {
-            type: "ul",
-            items: [
-              "Ведём список ожидания и отправляем новости о бете и запуске.",
-              "Отвечаем на ваши обращения в поддержку.",
-              "Поддерживаем безопасность и работоспособность сервиса.",
-            ],
-          },
+          { type: "p", text: "Для отображения иконок сайтов Fiple может запрашивать изображения favicon у сервиса Google Favicon. Этот запрос отправляется напрямую с вашего устройства в Google, а не через серверы Fiple." },
+          { type: "p", text: "В рамках такого запроса Google может получать домен сайта и стандартную сетевую информацию, например ваш IP-адрес." },
+          { type: "p", text: "Fiple не хранит домен сайта или сетевую информацию из этих запросов. Google обрабатывает эти данные в соответствии с Политикой конфиденциальности Google." },
         ],
       },
       {
-        heading: "Передача данных",
+        heading: "Аналитика и отслеживание",
         blocks: [
-          { type: "p", text: "Мы не продаём ваши персональные данные. Для работы Fiple мы используем несколько проверенных провайдеров — например, для хранения списка ожидания и отправки писем — и они обрабатывают данные только от нашего имени." },
+          { type: "p", text: "Fiple не использует рекламу, технологии отслеживания или сторонние аналитические SDK в своих приложениях для iPhone и Mac." },
         ],
       },
       {
-        heading: "Хранение и удаление данных",
+        heading: "Список ожидания и письма",
         blocks: [
-          { type: "p", text: "Мы храним ваш email из списка ожидания, пока вы не отпишетесь или не попросите его удалить. Напишите нам в любой момент — и мы вас удалим." },
+          { type: "p", text: "На сайте Fiple может быть доступен необязательный список ожидания." },
+          { type: "p", text: "Если вы решите присоединиться, мы собираем ваш email, чтобы отправлять новости о продукте, приглашения в бету и анонсы запуска." },
+          { type: "p", text: "Ваш email безопасно хранится с помощью Supabase — нашего провайдера для работы списка ожидания. Мы никогда не продаём и не передаём ваш email для рекламы." },
+          { type: "p", text: "Вы можете отписаться в любой момент по ссылке отписки в наших письмах или связавшись с нами напрямую. По запросу мы удалим ваш email из наших записей." },
         ],
       },
       {
-        heading: "Ваши права",
+        heading: "Ваш выбор",
         blocks: [
-          {
-            type: "ul",
-            items: [
-              "Отписаться от любого нашего письма.",
-              "Запросить доступ к данным о вас или их удаление.",
-            ],
-          },
+          { type: "p", text: "Вы можете отключить сопряжённые устройства в Fiple, чтобы удалить данные сопряжения." },
+          { type: "p", text: "Поскольку у Fiple нет доступа к вашим локально хранимым данным приложения, остальные локальные данные вы можете контролировать или удалять стандартными средствами управления приложениями вашего устройства." },
         ],
       },
       {
         heading: "Дети",
         blocks: [
-          { type: "p", text: "Fiple не предназначен для детей, и мы сознательно не собираем данные о тех, кому меньше 13 лет." },
-        ],
-      },
-      {
-        heading: "Изменения политики",
-        blocks: [
-          { type: "p", text: "Если мы изменим эту политику, мы обновим дату выше, а о значимых изменениях сообщим." },
+          { type: "p", text: "Fiple не предназначен для детей младше 13 лет и сознательно не собирает их персональные данные." },
         ],
       },
       {
         heading: "Контакты",
         blocks: [
-          { type: "p", text: `Вопросы о конфиденциальности? Напишите нам на ${SUPPORT_EMAIL}.` },
+          { type: "p", text: "По вопросам конфиденциальности или связанным запросам пишите:" },
+          { type: "p", text: SUPPORT_EMAIL },
+          { type: "p", text: "Владелец: Диас Максатов, Казахстан" },
         ],
       },
     ],
@@ -330,68 +299,71 @@ const ru: Record<LegalKey, LegalDoc> = {
   terms: {
     eyebrow: "Правовое",
     title: "Условия использования",
-    tagline: "Соглашение об использовании Fiple и участии в списке ожидания.",
+    tagline: "Соглашение об использовании приложений Fiple.",
     updated: UPDATED_RU,
     sections: [
       {
-        heading: "Соглашение",
+        heading: "Принятие условий",
         blocks: [
-          { type: "p", text: "Записываясь в список ожидания Fiple или используя приложения Fiple, вы принимаете эти условия. Если вы не согласны, пожалуйста, не пользуйтесь сервисом." },
+          { type: "p", text: "Скачивая, устанавливая или используя приложения Fiple, вы принимаете эти Условия использования." },
+          { type: "p", text: "Если вы не согласны с этими условиями, пожалуйста, не используйте Fiple." },
         ],
       },
       {
-        heading: "Что такое Fiple",
+        heading: "Описание сервиса",
         blocks: [
-          { type: "p", text: "Fiple — это приложение для Mac и iPhone, позволяющее запускать приложения, сайты и шорткаты вашего Mac с iPhone. Сейчас оно в разработке, и список ожидания даёт ранний доступ, когда оно будет готово." },
+          { type: "p", text: "Fiple — это приложение для Mac и iPhone, позволяющее с помощью iPhone запускать приложения, открывать сайты и выполнять команды Apple Shortcuts, а также восстанавливать настроенные пользователем рабочие пространства на сопряжённом Mac по локальной сети." },
+          { type: "p", text: "Рабочее пространство — это плитка, выполняющая одно или несколько таких действий." },
         ],
       },
       {
-        heading: "Бета-версия",
+        heading: "Ответственность пользователя",
         blocks: [
-          { type: "p", text: "Fiple предоставляется «как есть» и «по мере доступности». Ранние версии могут меняться, содержать ошибки или быть временно недоступны. Мы не даём гарантий в отношении приложений." },
-        ],
-      },
-      {
-        heading: "Ответственное использование",
-        blocks: [
+          { type: "p", text: "Вы несёте ответственность за:" },
           {
             type: "ul",
             items: [
-              "Используйте приложения законно и только с устройствами, которыми владеете или которыми вправе управлять.",
-              "Не пытайтесь нарушать работу сервиса, злоупотреблять им или получать несанкционированный доступ к нему либо к устройствам других людей.",
-              "Вы отвечаете за создаваемые рабочие пространства и запускаемые действия.",
+              "Сохранение доступа к устройствам, которыми вы владеете или которыми вправе управлять.",
+              "Управление приложениями, сайтами, шорткатами и рабочими пространствами, которые вы настраиваете.",
+              "Поведение любой команды Apple Shortcuts, которую вы запускаете через Fiple.",
+              "Использование Fiple в соответствии с применимыми законами и нормами.",
+              "Отказ от попыток нарушить работу Fiple, злоупотреблять им или получить несанкционированный доступ к Fiple либо к устройствам других людей.",
             ],
           },
         ],
       },
       {
-        heading: "Список ожидания",
+        heading: "Доступность",
         blocks: [
-          { type: "p", text: "Записываясь в список ожидания, вы просите нас писать вам о бета-доступе и новостях запуска. Вы можете отписаться в любой момент." },
-        ],
-      },
-      {
-        heading: "Наш бренд и контент",
-        blocks: [
-          { type: "p", text: "Название Fiple, логотип, приложения и этот сайт принадлежат нам. Пожалуйста, не копируйте и не используйте их без разрешения." },
+          { type: "p", text: "Fiple предоставляется «как есть» и «по мере доступности»." },
+          { type: "p", text: "Мы можем обновлять, изменять, приостанавливать или прекращать работу функций в любое время без предварительного уведомления." },
         ],
       },
       {
         heading: "Ограничение ответственности",
         blocks: [
-          { type: "p", text: "В максимальной степени, допустимой законом, Fiple не несёт ответственности за любые косвенные, случайные или последующие убытки, возникшие из-за использования приложений или сайта." },
+          { type: "p", text: "В максимальной степени, допустимой применимым законом, Fiple и его владелец не несут ответственности за любые косвенные, случайные, специальные, последующие или штрафные убытки, возникшие из-за использования Fiple." },
         ],
       },
       {
-        heading: "Изменения условий",
+        heading: "Интеллектуальная собственность",
         blocks: [
-          { type: "p", text: "Мы можем обновлять эти условия. Если это произойдёт, мы изменим дату выше. Продолжая пользоваться Fiple, вы принимаете обновлённые условия." },
+          { type: "p", text: "Fiple, его бренд, дизайн и программное обеспечение защищены применимым законодательством об интеллектуальной собственности и остаются собственностью Диаса Максатова или соответствующих правообладателей." },
+          { type: "p", text: "Apple и Apple Shortcuts являются товарными знаками Apple Inc. Fiple не связан с Apple Inc. и не одобрен ею." },
+        ],
+      },
+      {
+        heading: "Применимое право",
+        blocks: [
+          { type: "p", text: "Эти Условия регулируются законодательством Республики Казахстан без учёта коллизионных норм." },
         ],
       },
       {
         heading: "Контакты",
         blocks: [
-          { type: "p", text: `Вопросы об условиях? Напишите нам на ${SUPPORT_EMAIL}.` },
+          { type: "p", text: "Вопросы по этим Условиям можно отправлять на:" },
+          { type: "p", text: SUPPORT_EMAIL },
+          { type: "p", text: "Владелец: Диас Максатов" },
         ],
       },
     ],
@@ -400,56 +372,54 @@ const ru: Record<LegalKey, LegalDoc> = {
   support: {
     eyebrow: "Поддержка",
     title: "Помощь и поддержка",
-    tagline: "Помощь с сопряжением, настройкой и всем остальным.",
+    tagline: "Спасибо, что пользуетесь Fiple.",
     sections: [
       {
-        heading: "Связаться с нами",
+        heading: "Как работает Fiple",
         blocks: [
-          { type: "p", text: `Быстрее всего связаться с нами по почте. Напишите на ${SUPPORT_EMAIL}, и мы ответим, обычно в течение пары рабочих дней.` },
+          { type: "p", text: "Fiple позволяет с помощью iPhone запускать приложения, открывать сайты и выполнять команды Apple Shortcuts, а также мгновенно восстанавливать рабочие пространства на сопряжённом Mac по вашей локальной сети." },
         ],
       },
       {
-        heading: "Настройка вкратце",
+        heading: "Почему Fiple не находит мой Mac?",
         blocks: [
+          { type: "p", text: "Убедитесь, что:" },
           {
             type: "ul",
             items: [
-              "Установите Fiple для Mac — он живёт в строке меню.",
-              "Откройте Fiple на iPhone; оба устройства должны быть в одной сети Wi-Fi.",
-              "Введите 4-значный код с экрана Mac, чтобы выполнить сопряжение.",
-              "Тапните рабочее пространство или приложение, чтобы запустить его на Mac.",
+              "Fiple открыт на вашем Mac и отображается в строке меню.",
+              "iPhone и Mac подключены к одной локальной сети.",
+              "Для Fiple на iPhone включён доступ к локальной сети.",
             ],
           },
         ],
       },
       {
-        heading: "Fiple не находит мой Mac",
+        heading: "Как переподключиться к Mac?",
         blocks: [
-          { type: "p", text: "Убедитесь, что оба устройства в одной сети Wi-Fi, приложение Fiple открыто на Mac, и вы разрешили Fiple доступ к локальной сети на iPhone (Настройки → Fiple)." },
+          { type: "p", text: "Обычно Fiple переподключается автоматически, когда оба устройства снова оказываются в одной локальной сети." },
+          { type: "p", text: "Если вы отключились вручную, откройте Fiple на Mac, найдите код сопряжения в приложении строки меню и введите его в Fiple на iPhone." },
         ],
       },
       {
-        heading: "Что нужно, чтобы пользоваться Fiple?",
+        heading: "Как добавить команду Apple Shortcuts на плитку?",
         blocks: [
-          { type: "p", text: "Mac и iPhone в одной сети. Приложение на Mac выполняет запуск, а iPhone — это пульт." },
+          { type: "p", text: "На Mac добавьте действие «Команда» (Shortcut) и выберите одну из списка ваших шорткатов. При первом обращении macOS попросит разрешить Fiple доступ к «Командам» — разрешите, чтобы увидеть список. Если не хотите, просто введите точное название шортката вручную." },
         ],
       },
       {
-        heading: "Fiple уже доступен?",
+        heading: "Почему не открывается приложение, сайт или шорткат?",
         blocks: [
-          { type: "p", text: "Fiple скоро выйдет для macOS и iPhone. Запишитесь в список ожидания, и мы напишем, как только откроется бета-доступ." },
+          { type: "p", text: "Убедитесь, что Fiple открыт на Mac и iPhone показывает, что он подключён." },
+          { type: "p", text: "Также проверьте, что выбранные приложения по-прежнему установлены, а нужный шорткат всё ещё существует в приложении «Команды» с тем же названием." },
         ],
       },
       {
-        heading: "Как iPhone общается с Mac?",
+        heading: "Контакты",
         blocks: [
-          { type: "p", text: "Напрямую по локальной сети — для запуска нет облачного посредника, а содержимое ваших рабочих пространств остаётся на ваших устройствах." },
-        ],
-      },
-      {
-        heading: "Как покинуть список ожидания?",
-        blocks: [
-          { type: "p", text: `Используйте ссылку для отписки в любом письме или напишите на ${SUPPORT_EMAIL}.` },
+          { type: "p", text: "Если нужна помощь, есть отзыв или вы нашли ошибку, пишите:" },
+          { type: "p", text: SUPPORT_EMAIL },
+          { type: "p", text: "Мы стараемся отвечать как можно быстрее." },
         ],
       },
     ],
