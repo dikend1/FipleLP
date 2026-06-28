@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { legalDocs } from "./data/legal";
 import { useLang } from "./lib/i18n";
-import { useHashRoute } from "./lib/useHashRoute";
+import { useRoute } from "./lib/router";
 import { LegalPage } from "./pages/LegalPage";
 import { DownloadSection } from "./sections/DownloadSection";
 import { HeroSection } from "./sections/HeroSection";
@@ -15,7 +15,7 @@ import { ProductSection } from "./sections/ProductSection";
 import { UseCasesSection } from "./sections/UseCasesSection";
 
 export default function App() {
-  const route = useHashRoute();
+  const route = useRoute();
   const { lang } = useLang();
 
   useEffect(() => {
@@ -25,10 +25,12 @@ export default function App() {
         window.scrollTo(0, 0);
         return;
       }
-      // Returning home (e.g. from a legal page) — honor any section anchor.
+      // On home: honor any section anchor, otherwise land at the top.
       const hash = window.location.hash;
-      if (hash && !hash.startsWith("#/")) {
+      if (hash) {
         document.getElementById(hash.slice(1))?.scrollIntoView();
+      } else {
+        window.scrollTo(0, 0);
       }
     });
     return () => cancelAnimationFrame(id);
