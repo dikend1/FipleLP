@@ -40,9 +40,9 @@ export function Footer() {
           <div>
             <p className="mb-4 font-mono text-[11px] font-medium tracking-[0.12em] text-faint uppercase">{t.footer.legalHeading}</p>
             <ul className="grid gap-3 text-[15px] font-medium text-ink2">
-              <li><a className="transition hover:text-blue" href="#/support">{t.footer.legalSupport}</a></li>
-              <li><a className="transition hover:text-blue" href="#/privacy">{t.footer.legalPrivacy}</a></li>
-              <li><a className="transition hover:text-blue" href="#/terms">{t.footer.legalTerms}</a></li>
+              <li><a className="transition hover:text-blue" href="/support">{t.footer.legalSupport}</a></li>
+              <li><a className="transition hover:text-blue" href="/privacy">{t.footer.legalPrivacy}</a></li>
+              <li><a className="transition hover:text-blue" href="/terms">{t.footer.legalTerms}</a></li>
             </ul>
           </div>
         </div>
