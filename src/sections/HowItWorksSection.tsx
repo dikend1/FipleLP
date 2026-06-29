@@ -1,4 +1,4 @@
-import appPairing from "../assets/app-pairing.png";
+import appPairing from "../assets/app-pairing.webp";
 import { useT } from "../lib/i18n";
 
 export function HowItWorksSection() {
