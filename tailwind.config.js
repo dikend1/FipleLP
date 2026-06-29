@@ -39,8 +39,15 @@ export default {
         float: "float 8s ease-in-out infinite",
         rise: "rise 720ms cubic-bezier(0.22,1,0.36,1) both",
         ping2: "ping2 2.4s cubic-bezier(0,0,0.2,1) infinite",
+        trace: "trace 2.6s cubic-bezier(0.65,0,0.35,1) infinite",
       },
       keyframes: {
+        trace: {
+          "0%": { left: "0%", opacity: "0" },
+          "14%": { opacity: "1" },
+          "82%": { opacity: "1" },
+          "100%": { left: "100%", opacity: "0" },
+        },
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-12px)" },
