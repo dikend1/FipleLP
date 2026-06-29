@@ -1,5 +1,5 @@
 import { Boxes, LayoutGrid, Smartphone } from "lucide-react";
-import appMac from "../assets/app-mac.png";
+import appMac from "../assets/app-mac.webp";
 import { useT } from "../lib/i18n";
 
 const calloutIcons = [LayoutGrid, Boxes, Smartphone];

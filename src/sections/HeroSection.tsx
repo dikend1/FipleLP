@@ -1,5 +1,5 @@
 import { ArrowRight, Play } from "lucide-react";
-import appHome from "../assets/app-home.png";
+import appHome from "../assets/app-home.webp";
 import { useT } from "../lib/i18n";
 
 export function HeroSection() {
