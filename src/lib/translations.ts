@@ -21,6 +21,7 @@ const en = {
   },
   demo: {
     beats: ["Tap on iPhone", "Mac launches instantly", "Back to your flow"],
+    nodes: ["iPhone", "Mac", "Connected"],
     aria: "How Fiple works in three beats",
   },
   how: {
@@ -162,6 +163,7 @@ const ru: typeof en = {
   },
   demo: {
     beats: ["Тап на iPhone", "Mac запускает мгновенно", "Снова в потоке"],
+    nodes: ["iPhone", "Mac", "Подключено"],
     aria: "Как Fiple работает в три шага",
   },
   how: {
