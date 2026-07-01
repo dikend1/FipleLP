@@ -77,19 +77,19 @@ export function DownloadSection() {
           </p>
 
           <form
-            className="mx-auto mt-8 flex max-w-[520px] items-center gap-2 rounded-2xl border border-white/15 bg-white/[0.06] p-2 backdrop-blur-sm max-sm:flex-col"
+            className="mx-auto mt-8 flex max-w-[520px] items-center gap-2 rounded-2xl border border-white/15 bg-white/[0.06] p-2 backdrop-blur-sm transition duration-200 focus-within:border-white/30 focus-within:bg-white/[0.09] focus-within:ring-4 focus-within:ring-white/10 max-sm:flex-col max-sm:gap-2.5"
             onSubmit={handleSubmit}
           >
             <input
               name="email"
-              className="w-full min-w-0 bg-transparent px-4 text-[16px] text-white placeholder:text-white/40 focus:outline-none max-sm:min-h-[48px] max-sm:text-center"
+              className="h-[50px] w-full min-w-0 bg-transparent px-4 text-[16px] text-white placeholder:text-white/40 focus:outline-none max-sm:text-center"
               aria-label={t.download.emailAria}
               type="email"
               placeholder="you@example.com"
               required
             />
             <button
-              className="inline-flex min-h-[50px] shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-6 text-[16px] font-semibold text-ink transition hover:bg-white/90 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60 max-sm:w-full"
+              className="inline-flex h-[50px] shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-6 text-[16px] font-semibold text-ink transition hover:bg-white/90 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60 max-sm:w-full"
               disabled={submitState === "submitting"}
               type="submit"
             >

@@ -46,6 +46,16 @@ input {
   outline-offset: 2px;
 }
 
+/*
+ * Text fields always match :focus-visible (even on click), so the global blue
+ * outline would sit as an ugly box-in-a-box inside styled inputs. Suppress it —
+ * these fields signal focus through their own container ring (focus-within).
+ */
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
