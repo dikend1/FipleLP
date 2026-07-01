@@ -10,7 +10,7 @@ export function Header() {
         <img src={icon} alt="" className="size-9 drop-shadow-[0_4px_8px_rgba(11,11,15,0.30)]" width={36} height={36} />
         <span className="font-display text-[20px] font-bold tracking-[-0.03em] text-ink">Fiple</span>
       </a>
-      <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 text-[15px] font-medium text-ink2 md:flex" aria-label="Primary navigation">
+      <nav className="hidden flex-1 items-center justify-center gap-1 px-4 text-[15px] font-medium text-ink2 md:flex" aria-label="Primary navigation">
         <a className="rounded-full px-3.5 py-2 transition hover:bg-base2" href="#how">{t.header.navHow}</a>
         <a className="rounded-full px-3.5 py-2 transition hover:bg-base2" href="#product">{t.header.navProduct}</a>
         <a className="rounded-full px-3.5 py-2 transition hover:bg-base2" href="#mac">{t.header.navMac}</a>
@@ -18,7 +18,7 @@ export function Header() {
       <div className="flex items-center gap-2.5">
         <LangToggle />
         <a
-          className="inline-flex items-center gap-2 rounded-xl bg-ink px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-ink2 active:scale-[0.98] max-sm:px-3.5"
+          className="inline-flex items-center gap-2 rounded-xl bg-ink px-4 py-2.5 text-[15px] font-semibold whitespace-nowrap text-white transition hover:bg-ink2 active:scale-[0.98] max-sm:px-3.5 max-sm:text-[14px]"
           href="#download"
         >
           <span className="size-1.5 rounded-full bg-green" aria-hidden="true" />
