@@ -2,15 +2,18 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { messages, type Messages } from "./translations";
 
-export type Lang = "en" | "ru";
+export type Lang = "en" | "ru" | "kz";
 
 const STORAGE_KEY = "fiple-lang";
 
 function detectInitialLang(): Lang {
   if (typeof window === "undefined") return "en";
   const saved = window.localStorage.getItem(STORAGE_KEY);
-  if (saved === "en" || saved === "ru") return saved;
-  return navigator.language?.toLowerCase().startsWith("ru") ? "ru" : "en";
+  if (saved === "en" || saved === "ru" || saved === "kz") return saved;
+  const nav = navigator.language?.toLowerCase() ?? "";
+  if (nav.startsWith("kk") || nav.startsWith("kz")) return "kz";
+  if (nav.startsWith("ru")) return "ru";
+  return "en";
 }
 
 type LangContextValue = {
