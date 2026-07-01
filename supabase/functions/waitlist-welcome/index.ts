@@ -28,7 +28,7 @@ function welcomeHtml(): string {
   <body style="margin:0;background:#f2f3f5;font-family:-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif;color:#0b0b0f;">
     <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
       <div style="text-align:center;margin-bottom:28px;">
-        <div style="display:inline-block;width:52px;height:52px;line-height:52px;border-radius:14px;background:#0b0b0f;color:#fff;font-size:26px;font-weight:800;">F</div>
+        <img src="https://fiple.app/icon.png" width="52" height="52" alt="Fiple" style="display:inline-block;width:52px;height:52px;border-radius:14px;" />
       </div>
       <div style="background:#ffffff;border:1px solid #e6e8ec;border-radius:20px;padding:36px 32px;box-shadow:0 6px 20px rgba(11,11,15,0.05);">
         <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#2f6bff;">You're on the list</p>
