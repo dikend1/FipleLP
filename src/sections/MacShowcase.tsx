@@ -25,15 +25,13 @@ export function MacShowcase() {
       {/* Mac window */}
       <div className="relative mt-12 max-sm:mt-9">
         <div className="absolute inset-x-10 top-10 -z-[1] h-full rounded-[28px] bg-[radial-gradient(circle_at_50%_0%,rgba(46,107,255,0.18),transparent_60%)] blur-2xl" aria-hidden="true" />
-        <div className="max-sm:-mx-3 max-sm:overflow-x-auto max-sm:pb-4 max-sm:[scrollbar-width:none] max-sm:[&::-webkit-scrollbar]:hidden">
-          <div className="overflow-hidden rounded-[14px] border border-line shadow-device max-sm:min-w-[640px]">
-            <img
-              src={appMac}
-              alt="Fiple for macOS — the Start Coding, Vibe, Productive, and Games workspaces, the Fiple Bar, Recent activity, and a connected iPhone"
-              className="block w-full"
-              loading="lazy"
-            />
-          </div>
+        <div className="overflow-hidden rounded-[14px] border border-line shadow-device max-sm:rounded-[10px]">
+          <img
+            src={appMac}
+            alt="Fiple for macOS — the Start Coding, Vibe, Productive, and Games workspaces, the Fiple Bar, Recent activity, and a connected iPhone"
+            className="block w-full"
+            loading="lazy"
+          />
         </div>
       </div>
 
