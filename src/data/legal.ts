@@ -26,7 +26,7 @@ const en: Record<LegalKey, LegalDoc> = {
         heading: "Information stored on your devices",
         blocks: [
           { type: "p", text: "Fiple does not require an account." },
-          { type: "p", text: "Your workspaces, selected apps, website links, chosen shortcuts, launch history, preferences, and pairing information are stored locally on your iPhone and Mac." },
+          { type: "p", text: "Your workspaces, selected apps, website links, launch history, preferences, and pairing information are stored locally on your iPhone and Mac." },
           { type: "p", text: "This information is exchanged directly between your paired devices when needed for Fiple to function. Fiple does not upload or store this information on Fiple servers." },
         ],
       },
@@ -38,10 +38,10 @@ const en: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "Apps and shortcuts on your Mac",
+        heading: "Apps on your Mac",
         blocks: [
-          { type: "p", text: "To let you build tiles, Fiple reads the list of applications installed on your Mac and, with your permission, the names of your Apple Shortcuts." },
-          { type: "p", text: "This information stays on your Mac. Fiple reads only the names of your Shortcuts, never their contents, and never sends this information anywhere. macOS will ask you to allow access to Shortcuts the first time; you can decline and enter a shortcut name manually instead." },
+          { type: "p", text: "To let you build tiles, Fiple reads the list of applications installed on your Mac." },
+          { type: "p", text: "This information stays on your Mac and is never sent anywhere." },
         ],
       },
       {
@@ -107,7 +107,7 @@ const en: Record<LegalKey, LegalDoc> = {
       {
         heading: "Description of service",
         blocks: [
-          { type: "p", text: "Fiple is a Mac and iPhone application that lets you use an iPhone to launch apps, open websites, and run Apple Shortcuts, and to restore user-configured workspaces on a paired Mac over a local network." },
+          { type: "p", text: "Fiple is a Mac and iPhone application that lets you use an iPhone to launch apps and open websites, and to restore user-configured workspaces on a paired Mac over a local network." },
           { type: "p", text: "A workspace is a tile that performs one or more of these actions." },
         ],
       },
@@ -119,8 +119,7 @@ const en: Record<LegalKey, LegalDoc> = {
             type: "ul",
             items: [
               "Maintaining access to devices you own or are authorized to control.",
-              "Managing the apps, websites, shortcuts, and workspaces you configure.",
-              "The behavior of any Apple Shortcut you choose to run through Fiple.",
+              "Managing the apps, websites, and workspaces you configure.",
               "Using Fiple in compliance with applicable laws and regulations.",
               "Not attempting to disrupt, abuse, or gain unauthorized access to Fiple or another person's devices.",
             ],
@@ -144,7 +143,7 @@ const en: Record<LegalKey, LegalDoc> = {
         heading: "Intellectual property",
         blocks: [
           { type: "p", text: "Fiple, its branding, design, and software are protected by applicable intellectual property laws and remain the property of Dias Maksatov or the relevant rights holders." },
-          { type: "p", text: "Apple and Apple Shortcuts are trademarks of Apple Inc. Fiple is not affiliated with or endorsed by Apple Inc." },
+          { type: "p", text: "Apple is a trademark of Apple Inc. Fiple is not affiliated with or endorsed by Apple Inc." },
         ],
       },
       {
@@ -172,7 +171,7 @@ const en: Record<LegalKey, LegalDoc> = {
       {
         heading: "How Fiple works",
         blocks: [
-          { type: "p", text: "Fiple lets you use your iPhone to launch apps, open websites, and run Apple Shortcuts, and to instantly restore workspaces on your paired Mac over your local network." },
+          { type: "p", text: "Fiple lets you use your iPhone to launch apps and open websites, and to instantly restore workspaces on your paired Mac over your local network." },
         ],
       },
       {
@@ -197,16 +196,10 @@ const en: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "How do I add an Apple Shortcut to a tile?",
-        blocks: [
-          { type: "p", text: "On your Mac, add a Shortcut action and choose one from the list of your shortcuts. The first time, macOS asks you to allow Fiple to access Shortcuts — allow it to see the list. If you prefer not to, you can simply type the exact name of the shortcut instead." },
-        ],
-      },
-      {
-        heading: "Why won't an app, website, or shortcut open?",
+        heading: "Why won't an app or website open?",
         blocks: [
           { type: "p", text: "Make sure Fiple is open on your Mac and your iPhone shows that it is connected." },
-          { type: "p", text: "Also check that selected apps are still installed, and that any shortcut still exists in the Shortcuts app with the same name." },
+          { type: "p", text: "Also check that selected apps are still installed." },
         ],
       },
       {
@@ -232,7 +225,7 @@ const ru: Record<LegalKey, LegalDoc> = {
         heading: "Данные на ваших устройствах",
         blocks: [
           { type: "p", text: "Fiple не требует аккаунта." },
-          { type: "p", text: "Ваши рабочие пространства, выбранные приложения, ссылки на сайты, выбранные шорткаты, история запусков, настройки и данные сопряжения хранятся локально на вашем iPhone и Mac." },
+          { type: "p", text: "Ваши рабочие пространства, выбранные приложения, ссылки на сайты, история запусков, настройки и данные сопряжения хранятся локально на вашем iPhone и Mac." },
           { type: "p", text: "Эти данные передаются напрямую между сопряжёнными устройствами, когда это нужно для работы Fiple. Fiple не загружает и не хранит их на своих серверах." },
         ],
       },
@@ -244,10 +237,10 @@ const ru: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "Приложения и шорткаты на вашем Mac",
+        heading: "Приложения на вашем Mac",
         blocks: [
-          { type: "p", text: "Чтобы вы могли создавать плитки, Fiple читает список приложений, установленных на вашем Mac, и, с вашего разрешения, названия ваших команд Apple Shortcuts." },
-          { type: "p", text: "Эти данные остаются на вашем Mac. Fiple читает только названия ваших шорткатов, но не их содержимое, и никуда не отправляет эту информацию. При первом обращении macOS попросит разрешить доступ к «Командам»; вы можете отказать и ввести название шортката вручную." },
+          { type: "p", text: "Чтобы вы могли создавать плитки, Fiple читает список приложений, установленных на вашем Mac." },
+          { type: "p", text: "Эти данные остаются на вашем Mac и никуда не отправляются." },
         ],
       },
       {
@@ -313,7 +306,7 @@ const ru: Record<LegalKey, LegalDoc> = {
       {
         heading: "Описание сервиса",
         blocks: [
-          { type: "p", text: "Fiple — это приложение для Mac и iPhone, позволяющее с помощью iPhone запускать приложения, открывать сайты и выполнять команды Apple Shortcuts, а также восстанавливать настроенные пользователем рабочие пространства на сопряжённом Mac по локальной сети." },
+          { type: "p", text: "Fiple — это приложение для Mac и iPhone, позволяющее с помощью iPhone запускать приложения и открывать сайты, а также восстанавливать настроенные пользователем рабочие пространства на сопряжённом Mac по локальной сети." },
           { type: "p", text: "Рабочее пространство — это плитка, выполняющая одно или несколько таких действий." },
         ],
       },
@@ -325,8 +318,7 @@ const ru: Record<LegalKey, LegalDoc> = {
             type: "ul",
             items: [
               "Сохранение доступа к устройствам, которыми вы владеете или которыми вправе управлять.",
-              "Управление приложениями, сайтами, шорткатами и рабочими пространствами, которые вы настраиваете.",
-              "Поведение любой команды Apple Shortcuts, которую вы запускаете через Fiple.",
+              "Управление приложениями, сайтами и рабочими пространствами, которые вы настраиваете.",
               "Использование Fiple в соответствии с применимыми законами и нормами.",
               "Отказ от попыток нарушить работу Fiple, злоупотреблять им или получить несанкционированный доступ к Fiple либо к устройствам других людей.",
             ],
@@ -350,7 +342,7 @@ const ru: Record<LegalKey, LegalDoc> = {
         heading: "Интеллектуальная собственность",
         blocks: [
           { type: "p", text: "Fiple, его бренд, дизайн и программное обеспечение защищены применимым законодательством об интеллектуальной собственности и остаются собственностью Диаса Максатова или соответствующих правообладателей." },
-          { type: "p", text: "Apple и Apple Shortcuts являются товарными знаками Apple Inc. Fiple не связан с Apple Inc. и не одобрен ею." },
+          { type: "p", text: "Apple является товарным знаком Apple Inc. Fiple не связан с Apple Inc. и не одобрен ею." },
         ],
       },
       {
@@ -378,7 +370,7 @@ const ru: Record<LegalKey, LegalDoc> = {
       {
         heading: "Как работает Fiple",
         blocks: [
-          { type: "p", text: "Fiple позволяет с помощью iPhone запускать приложения, открывать сайты и выполнять команды Apple Shortcuts, а также мгновенно восстанавливать рабочие пространства на сопряжённом Mac по вашей локальной сети." },
+          { type: "p", text: "Fiple позволяет с помощью iPhone запускать приложения и открывать сайты, а также мгновенно восстанавливать рабочие пространства на сопряжённом Mac по вашей локальной сети." },
         ],
       },
       {
@@ -403,16 +395,10 @@ const ru: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "Как добавить команду Apple Shortcuts на плитку?",
-        blocks: [
-          { type: "p", text: "На Mac добавьте действие «Команда» (Shortcut) и выберите одну из списка ваших шорткатов. При первом обращении macOS попросит разрешить Fiple доступ к «Командам» — разрешите, чтобы увидеть список. Если не хотите, просто введите точное название шортката вручную." },
-        ],
-      },
-      {
-        heading: "Почему не открывается приложение, сайт или шорткат?",
+        heading: "Почему не открывается приложение или сайт?",
         blocks: [
           { type: "p", text: "Убедитесь, что Fiple открыт на Mac и iPhone показывает, что он подключён." },
-          { type: "p", text: "Также проверьте, что выбранные приложения по-прежнему установлены, а нужный шорткат всё ещё существует в приложении «Команды» с тем же названием." },
+          { type: "p", text: "Также проверьте, что выбранные приложения по-прежнему установлены." },
         ],
       },
       {
@@ -438,7 +424,7 @@ const kz: Record<LegalKey, LegalDoc> = {
         heading: "Құрылғыларыңыздағы деректер",
         blocks: [
           { type: "p", text: "Fiple тіркелгіні қажет етпейді." },
-          { type: "p", text: "Сіздің жұмыс кеңістіктеріңіз, таңдалған қолданбалар, сайт сілтемелері, таңдалған жарлықтар, іске қосу тарихы, баптаулар және жұптау деректері iPhone мен Mac құрылғыңызда жергілікті сақталады." },
+          { type: "p", text: "Сіздің жұмыс кеңістіктеріңіз, таңдалған қолданбалар, сайт сілтемелері, іске қосу тарихы, баптаулар және жұптау деректері iPhone мен Mac құрылғыңызда жергілікті сақталады." },
           { type: "p", text: "Бұл деректер Fiple жұмыс істеуі үшін қажет болғанда жұпталған құрылғылар арасында тікелей беріледі. Fiple оларды өз серверлеріне жүктемейді әрі сақтамайды." },
         ],
       },
@@ -450,10 +436,10 @@ const kz: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "Mac құрылғыңыздағы қолданбалар мен жарлықтар",
+        heading: "Mac құрылғыңыздағы қолданбалар",
         blocks: [
-          { type: "p", text: "Сіз тақташалар жасай алуыңыз үшін Fiple Mac құрылғыңызға орнатылған қолданбалар тізімін, ал сіздің рұқсатыңызбен Apple Shortcuts жарлықтарыңыздың атауларын оқиды." },
-          { type: "p", text: "Бұл деректер Mac құрылғыңызда қалады. Fiple тек жарлықтарыңыздың атауларын оқиды, олардың мазмұнын оқымайды әрі бұл ақпаратты еш жерге жібермейді. Алғаш рет macOS «Жарлықтарға» рұқсат сұрайды; сіз бас тартып, жарлық атауын қолмен енгізе аласыз." },
+          { type: "p", text: "Сіз тақташалар жасай алуыңыз үшін Fiple Mac құрылғыңызға орнатылған қолданбалар тізімін оқиды." },
+          { type: "p", text: "Бұл деректер Mac құрылғыңызда қалады әрі еш жерге жіберілмейді." },
         ],
       },
       {
@@ -519,7 +505,7 @@ const kz: Record<LegalKey, LegalDoc> = {
       {
         heading: "Қызмет сипаттамасы",
         blocks: [
-          { type: "p", text: "Fiple — iPhone арқылы қолданбаларды іске қосуға, сайттарды ашуға және Apple Shortcuts командаларын орындауға, сондай-ақ жұпталған Mac-та пайдаланушы баптаған жұмыс кеңістіктерін жергілікті желі арқылы қалпына келтіруге мүмкіндік беретін Mac пен iPhone қолданбасы." },
+          { type: "p", text: "Fiple — iPhone арқылы қолданбаларды іске қосуға және сайттарды ашуға, сондай-ақ жұпталған Mac-та пайдаланушы баптаған жұмыс кеңістіктерін жергілікті желі арқылы қалпына келтіруге мүмкіндік беретін Mac пен iPhone қолданбасы." },
           { type: "p", text: "Жұмыс кеңістігі — осы әрекеттердің бірін немесе бірнешеуін орындайтын тақташа." },
         ],
       },
@@ -531,8 +517,7 @@ const kz: Record<LegalKey, LegalDoc> = {
             type: "ul",
             items: [
               "Өзіңізге тиесілі немесе басқаруға құқығыңыз бар құрылғыларға қол жеткізуді сақтау.",
-              "Өзіңіз баптайтын қолданбаларды, сайттарды, жарлықтарды және жұмыс кеңістіктерін басқару.",
-              "Fiple арқылы іске қосатын кез келген Apple Shortcuts командасының әрекеті.",
+              "Өзіңіз баптайтын қолданбаларды, сайттарды және жұмыс кеңістіктерін басқару.",
               "Fiple-ды қолданыстағы заңдар мен нормаларға сәйкес пайдалану.",
               "Fiple-дың жұмысын бұзуға, оны теріс пайдалануға немесе Fiple-ға не басқа адамдардың құрылғыларына рұқсатсыз қол жеткізуге тырыспау.",
             ],
@@ -556,7 +541,7 @@ const kz: Record<LegalKey, LegalDoc> = {
         heading: "Зияткерлік меншік",
         blocks: [
           { type: "p", text: "Fiple, оның бренді, дизайны және бағдарламалық жасақтамасы қолданыстағы зияткерлік меншік туралы заңнамамен қорғалады әрі Диас Мақсатовтың немесе тиісті құқық иеленушілердің меншігі болып қала береді." },
-          { type: "p", text: "Apple және Apple Shortcuts — Apple Inc. компаниясының сауда белгілері. Fiple Apple Inc. компаниясымен байланысты емес әрі онымен мақұлданбаған." },
+          { type: "p", text: "Apple — Apple Inc. компаниясының сауда белгісі. Fiple Apple Inc. компаниясымен байланысты емес әрі онымен мақұлданбаған." },
         ],
       },
       {
@@ -584,7 +569,7 @@ const kz: Record<LegalKey, LegalDoc> = {
       {
         heading: "Fiple қалай жұмыс істейді",
         blocks: [
-          { type: "p", text: "Fiple iPhone арқылы қолданбаларды іске қосуға, сайттарды ашуға және Apple Shortcuts командаларын орындауға, сондай-ақ жұпталған Mac-та жұмыс кеңістіктерін жергілікті желіңіз арқылы бірден қалпына келтіруге мүмкіндік береді." },
+          { type: "p", text: "Fiple iPhone арқылы қолданбаларды іске қосуға және сайттарды ашуға, сондай-ақ жұпталған Mac-та жұмыс кеңістіктерін жергілікті желіңіз арқылы бірден қалпына келтіруге мүмкіндік береді." },
         ],
       },
       {
@@ -609,16 +594,10 @@ const kz: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "Тақташаға Apple Shortcuts командасын қалай қосамын?",
-        blocks: [
-          { type: "p", text: "Mac-та «Команда» (Shortcut) әрекетін қосып, жарлықтарыңыз тізімінен біреуін таңдаңыз. Алғаш рет macOS Fiple-ға «Жарлықтарға» қол жеткізуге рұқсат сұрайды — тізімді көру үшін рұқсат беріңіз. Қаламасаңыз, жарлықтың нақты атауын қолмен теріңіз." },
-        ],
-      },
-      {
-        heading: "Қолданба, сайт немесе жарлық неге ашылмайды?",
+        heading: "Қолданба немесе сайт неге ашылмайды?",
         blocks: [
           { type: "p", text: "Fiple Mac-та ашық екеніне және iPhone оның қосылғанын көрсететініне көз жеткізіңіз." },
-          { type: "p", text: "Сондай-ақ таңдалған қолданбалардың әлі де орнатылғанын, ал қажетті жарлықтың «Жарлықтар» қолданбасында сол атаумен әлі де бар екенін тексеріңіз." },
+          { type: "p", text: "Сондай-ақ таңдалған қолданбалардың әлі де орнатылғанын тексеріңіз." },
         ],
       },
       {
