@@ -14,7 +14,7 @@ const en = {
     titleLine2Pre: "into your ",
     titleAccent: "flow.",
     subtitle:
-      "Fiple turns your iPhone into a launcher for your Mac. Open workspaces, apps, and shortcuts in one tap — without breaking focus.",
+      "Fiple turns your iPhone into a launcher for your Mac. Open workspaces, apps, and sites in one tap — without breaking focus.",
     ctaPrimary: "Join waitlist",
     ctaSecondary: "See how it works",
     tags: ["Pairs in seconds", "No account to try", "Works over your network"],
@@ -54,7 +54,7 @@ const en = {
     callouts: [
       {
         title: "Workspaces",
-        body: "Group the apps, sites, and shortcuts you open together. Run the whole set with one tap.",
+        body: "Group the apps and sites you open together. Run the whole set with one tap.",
       },
       {
         title: "Fiple Bar",
@@ -72,8 +72,7 @@ const en = {
     features: [
       { title: "Apps", body: "Launch any Mac app the instant you tap it — no Dock, no Cmd-Tab." },
       { title: "Websites", body: "Open your saved sites and dashboards straight in your browser." },
-      { title: "Shortcuts", body: "Fire macOS Shortcuts and custom workflows from your phone." },
-      { title: "Workspaces", body: "Bundle apps, sites, and shortcuts together — then run the whole set at once." },
+      { title: "Workspaces", body: "Bundle apps and sites together — then run the whole set at once." },
       { title: "Fiple Bar", body: "Pin your most-used single apps for true one-tap launches." },
       { title: "Recent", body: "Jump right back to whatever you launched last." },
     ],
@@ -90,7 +89,7 @@ const en = {
       },
       {
         title: "For creators",
-        body: "Design tools, assets, browser preview, and export shortcuts, lined up and ready to fire.",
+        body: "Design tools, assets, browser preview, and exports, lined up and ready to fire.",
       },
       {
         title: "For focus",
@@ -156,7 +155,7 @@ const ru: typeof en = {
     titleLine2Pre: "снова в ",
     titleAccent: "потоке.",
     subtitle:
-      "Fiple превращает ваш iPhone в пульт запуска для Mac. Открывайте рабочие пространства, приложения и шорткаты одним касанием — не отвлекаясь от дела.",
+      "Fiple превращает ваш iPhone в пульт запуска для Mac. Открывайте рабочие пространства, приложения и сайты одним касанием — не отвлекаясь от дела.",
     ctaPrimary: "В список ожидания",
     ctaSecondary: "Как это работает",
     tags: ["Подключение за секунды", "Без регистрации", "Работает по вашей сети"],
@@ -196,7 +195,7 @@ const ru: typeof en = {
     callouts: [
       {
         title: "Рабочие пространства",
-        body: "Объедините приложения, сайты и шорткаты, которые открываете вместе. Запускайте весь набор одним тапом.",
+        body: "Объедините приложения и сайты, которые открываете вместе. Запускайте весь набор одним тапом.",
       },
       {
         title: "Fiple Bar",
@@ -214,8 +213,7 @@ const ru: typeof en = {
     features: [
       { title: "Приложения", body: "Запускайте любое приложение Mac в момент тапа — без дока и Cmd-Tab." },
       { title: "Сайты", body: "Открывайте сохранённые сайты и дашборды прямо в браузере." },
-      { title: "Шорткаты", body: "Запускайте команды macOS и свои сценарии прямо с телефона." },
-      { title: "Рабочие пространства", body: "Соберите приложения, сайты и шорткаты вместе — и запускайте весь набор сразу." },
+      { title: "Рабочие пространства", body: "Соберите приложения и сайты вместе — и запускайте весь набор сразу." },
       { title: "Fiple Bar", body: "Закрепите самые нужные приложения для запуска в один тап." },
       { title: "Недавние", body: "Мгновенно вернитесь к тому, что запускали последним." },
     ],
@@ -232,7 +230,7 @@ const ru: typeof en = {
       },
       {
         title: "Для креаторов",
-        body: "Дизайн-инструменты, ассеты, превью в браузере и шорткаты экспорта — всё под рукой и готово к запуску.",
+        body: "Дизайн-инструменты, ассеты, превью в браузере и экспорт — всё под рукой и готово к запуску.",
       },
       {
         title: "Для концентрации",
@@ -298,7 +296,7 @@ const kz: typeof en = {
     titleLine2Pre: "қайта ",
     titleAccent: "ағыныңызда.",
     subtitle:
-      "Fiple iPhone-ды Mac-ты іске қосу пультіне айналдырады. Жұмыс кеңістіктерін, қосымшаларды және жарлықтарды бір түртумен ашыңыз — назарыңызды бұзбай.",
+      "Fiple iPhone-ды Mac-ты іске қосу пультіне айналдырады. Жұмыс кеңістіктерін, қосымшаларды және сайттарды бір түртумен ашыңыз — назарыңызды бұзбай.",
     ctaPrimary: "Тізімге қосылу",
     ctaSecondary: "Қалай жұмыс істейтінін көру",
     tags: ["Секундтарда жұпталады", "Тіркелудің қажеті жоқ", "Сіздің желіңізде жұмыс істейді"],
@@ -338,7 +336,7 @@ const kz: typeof en = {
     callouts: [
       {
         title: "Жұмыс кеңістіктері",
-        body: "Бірге ашатын қосымшаларды, сайттарды және жарлықтарды топтаңыз. Бүкіл жиынтықты бір түртумен іске қосыңыз.",
+        body: "Бірге ашатын қосымшаларды және сайттарды топтаңыз. Бүкіл жиынтықты бір түртумен іске қосыңыз.",
       },
       {
         title: "Fiple Bar",
@@ -356,8 +354,7 @@ const kz: typeof en = {
     features: [
       { title: "Қосымшалар", body: "Кез келген Mac қосымшасын түрткен сәтте іске қосыңыз — доксыз, Cmd-Tab-сыз." },
       { title: "Сайттар", body: "Сақталған сайттарыңыз бен дашбордтарды тікелей браузерде ашыңыз." },
-      { title: "Жарлықтар", body: "macOS командалары мен өз сценарийлеріңізді телефоннан іске қосыңыз." },
-      { title: "Жұмыс кеңістіктері", body: "Қосымшаларды, сайттарды және жарлықтарды біріктіріп — бүкіл жиынтықты бірден іске қосыңыз." },
+      { title: "Жұмыс кеңістіктері", body: "Қосымшаларды және сайттарды біріктіріп — бүкіл жиынтықты бірден іске қосыңыз." },
       { title: "Fiple Bar", body: "Ең қажет қосымшаларды бекітіп, бір түртумен іске қосыңыз." },
       { title: "Соңғылар", body: "Ең соңғы іске қосқаныңызға лезде оралыңыз." },
     ],
@@ -374,7 +371,7 @@ const kz: typeof en = {
       },
       {
         title: "Креаторларға",
-        body: "Дизайн құралдары, ассеттер, браузердегі превью және экспорт жарлықтары — бәрі қолжетімді әрі іске қосуға дайын.",
+        body: "Дизайн құралдары, ассеттер, браузердегі превью және экспорт — бәрі қолжетімді әрі іске қосуға дайын.",
       },
       {
         title: "Шоғырлануға",
