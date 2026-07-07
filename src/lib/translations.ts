@@ -6,7 +6,7 @@ const en = {
     navHow: "How it works",
     navProduct: "Product",
     navMac: "Mac app",
-    waitlist: "Join waitlist",
+    download: "Download",
   },
   hero: {
     badge: "Native Mac + iPhone app",
@@ -14,8 +14,8 @@ const en = {
     titleLine2Pre: "into your ",
     titleAccent: "flow.",
     subtitle:
-      "Fiple turns your iPhone into a launcher for your Mac. Open workspaces, apps, and sites in one tap — without breaking focus.",
-    ctaPrimary: "Join waitlist",
+      "Fiple turns your iPhone into a launcher for your Mac. Open workspaces, apps, and sites in one tap, without breaking focus.",
+    ctaPrimary: "Download on the App Store",
     ctaSecondary: "See how it works",
     tags: ["Pairs in seconds", "No account to try", "Works over your network"],
   },
@@ -29,7 +29,7 @@ const en = {
     titleLine1: "Download once. Pair once.",
     titleLine2: "Launch every day.",
     subtitle:
-      "Pairing is the whole setup. With both devices on the same Wi-Fi, your iPhone finds your Mac and connects with a short code — no accounts, no cables.",
+      "Pairing is the whole setup. With both devices on the same Wi-Fi, your iPhone finds your Mac and connects with a short code, with no accounts or cables.",
     steps: [
       {
         title: "Install Fiple for Mac",
@@ -37,7 +37,7 @@ const en = {
       },
       {
         title: "Pair your iPhone",
-        body: "Open Fiple on your iPhone — it scans your local network for your Mac. Enter the 4-digit code to pair.",
+        body: "Open Fiple on your iPhone. It scans your local network for your Mac. Enter the 4-digit code to pair.",
       },
       {
         title: "Tap. Your Mac moves.",
@@ -58,7 +58,7 @@ const en = {
       },
       {
         title: "Fiple Bar",
-        body: "Pin single apps — Telegram, VS Code, Claude, ChatGPT — for instant one-tap launches.",
+        body: "Pin single apps like Telegram, VS Code, Claude, and ChatGPT for instant one-tap launches.",
       },
       {
         title: "Devices",
@@ -70,9 +70,9 @@ const en = {
     eyebrow: "What you launch",
     title: "Anything on your Mac, one tap away on your iPhone.",
     features: [
-      { title: "Apps", body: "Launch any Mac app the instant you tap it — no Dock, no Cmd-Tab." },
+      { title: "Apps", body: "Launch any Mac app the instant you tap it, with no Dock or Cmd-Tab." },
       { title: "Websites", body: "Open your saved sites and dashboards straight in your browser." },
-      { title: "Workspaces", body: "Bundle apps and sites together — then run the whole set at once." },
+      { title: "Workspaces", body: "Bundle apps and sites together, then run the whole set at once." },
       { title: "Fiple Bar", body: "Pin your most-used single apps for true one-tap launches." },
       { title: "Recent", body: "Jump right back to whatever you launched last." },
     ],
@@ -81,11 +81,11 @@ const en = {
     eyebrow: "Why Fiple",
     title: "Not a remote desktop. Not another dock.",
     subtitle:
-      "Fiple is a second command surface for your Mac — the fastest way to start what you were about to do, whoever you are.",
+      "Fiple is a second command surface for your Mac, the fastest way to start what you were about to do, whoever you are.",
     cards: [
       {
         title: "For builders",
-        body: "Editor, terminal, localhost, docs, and your AI assistant — the whole stack from one workspace.",
+        body: "Editor, terminal, localhost, docs, and your AI assistant, the whole stack from one workspace.",
       },
       {
         title: "For creators",
@@ -98,34 +98,31 @@ const en = {
     ],
   },
   download: {
-    badge: "Coming soon",
-    title: "Be first to get Fiple for Mac & iPhone.",
-    subtitle: "Join the beta list now. When the apps ship, this becomes your direct download.",
+    badge: "Available now",
+    title: "Fiple is out for Mac & iPhone.",
+    subtitle: "One universal app for your Mac and iPhone. Download it free on the App Store.",
+    appStore: "Download on the App Store",
     emailAria: "Email address",
-    submitIdle: "Join waitlist",
-    submitting: "Joining…",
-    macSoon: "Download for Mac — soon",
-    appStoreSoon: "App Store — soon",
-    futureAria: "Future downloads",
+    submitIdle: "Keep me posted",
+    submitting: "Sending…",
     status: {
-      default: "No spam — just beta access and launch updates.",
-      emptyEmail: "Enter your email to join the waitlist.",
-      adding: "Adding you to the waitlist…",
-      already: "You're already on the list. We'll email you when beta access opens.",
-      success: "You're on the list. We'll email you when beta access opens.",
+      default: "Prefer email? Get occasional product updates, no spam.",
+      emptyEmail: "Enter your email to get updates.",
+      adding: "Signing you up…",
+      already: "You're already subscribed. We'll keep you posted.",
+      success: "You're subscribed. We'll keep you posted on what's next.",
       error: "Something went wrong. Try again, or email us directly.",
     },
   },
   footer: {
     tagline:
       "A native Mac + iPhone app that puts your workspaces one tap away. Built for people who switch context all day.",
-    comingSoon: "Coming soon · macOS & iPhone",
+    comingSoon: "Available now · macOS & iPhone",
     pagesHeading: "Pages",
     pageHome: "Home",
     getItHeading: "Get it",
-    getWaitlist: "Join the waitlist",
-    getMacSoon: "Mac app — soon",
-    getAppStoreSoon: "App Store — soon",
+    getAppStore: "Download on the App Store",
+    getUpdates: "Email updates",
     legalHeading: "Legal & support",
     legalSupport: "Help & Support",
     legalPrivacy: "Privacy Policy",
@@ -147,7 +144,7 @@ const ru: typeof en = {
     navHow: "Как это работает",
     navProduct: "Возможности",
     navMac: "Приложение для Mac",
-    waitlist: "В список ожидания",
+    download: "Скачать",
   },
   hero: {
     badge: "Нативное приложение для Mac и iPhone",
@@ -155,8 +152,8 @@ const ru: typeof en = {
     titleLine2Pre: "снова в ",
     titleAccent: "потоке.",
     subtitle:
-      "Fiple превращает ваш iPhone в пульт запуска для Mac. Открывайте рабочие пространства, приложения и сайты одним касанием — не отвлекаясь от дела.",
-    ctaPrimary: "В список ожидания",
+      "Fiple превращает ваш iPhone в пульт запуска для Mac. Открывайте рабочие пространства, приложения и сайты одним касанием, не отвлекаясь от дела.",
+    ctaPrimary: "Скачать в App Store",
     ctaSecondary: "Как это работает",
     tags: ["Подключение за секунды", "Без регистрации", "Работает по вашей сети"],
   },
@@ -170,7 +167,7 @@ const ru: typeof en = {
     titleLine1: "Установите один раз. Подключите один раз.",
     titleLine2: "Запускайте каждый день.",
     subtitle:
-      "Вся настройка — это сопряжение. Когда оба устройства в одной сети Wi-Fi, iPhone находит ваш Mac и подключается по короткому коду — без аккаунтов и кабелей.",
+      "Вся настройка сводится к сопряжению. Когда оба устройства в одной сети Wi-Fi, iPhone находит ваш Mac и подключается по короткому коду, без аккаунтов и кабелей.",
     steps: [
       {
         title: "Установите Fiple для Mac",
@@ -178,10 +175,10 @@ const ru: typeof en = {
       },
       {
         title: "Подключите iPhone",
-        body: "Откройте Fiple на iPhone — он найдёт ваш Mac в локальной сети. Введите 4-значный код для сопряжения.",
+        body: "Откройте Fiple на iPhone, и он найдёт ваш Mac в локальной сети. Введите 4-значный код для сопряжения.",
       },
       {
-        title: "Тап — и Mac действует.",
+        title: "Тап, и Mac действует.",
         body: "Запустите целое рабочее пространство или одно приложение из Fiple Bar. Без окон, дока и Cmd-Tab.",
       },
     ],
@@ -199,7 +196,7 @@ const ru: typeof en = {
       },
       {
         title: "Fiple Bar",
-        body: "Закрепите отдельные приложения — Telegram, VS Code, Claude, ChatGPT — для мгновенного запуска одним тапом.",
+        body: "Закрепите отдельные приложения вроде Telegram, VS Code, Claude и ChatGPT для мгновенного запуска одним тапом.",
       },
       {
         title: "Устройства",
@@ -211,9 +208,9 @@ const ru: typeof en = {
     eyebrow: "Что вы запускаете",
     title: "Что угодно на вашем Mac в одном тапе на iPhone.",
     features: [
-      { title: "Приложения", body: "Запускайте любое приложение Mac в момент тапа — без дока и Cmd-Tab." },
+      { title: "Приложения", body: "Запускайте любое приложение Mac в момент тапа, без дока и Cmd-Tab." },
       { title: "Сайты", body: "Открывайте сохранённые сайты и дашборды прямо в браузере." },
-      { title: "Рабочие пространства", body: "Соберите приложения и сайты вместе — и запускайте весь набор сразу." },
+      { title: "Рабочие пространства", body: "Соберите приложения и сайты вместе и запускайте весь набор сразу." },
       { title: "Fiple Bar", body: "Закрепите самые нужные приложения для запуска в один тап." },
       { title: "Недавние", body: "Мгновенно вернитесь к тому, что запускали последним." },
     ],
@@ -222,51 +219,48 @@ const ru: typeof en = {
     eyebrow: "Почему Fiple",
     title: "Не удалённый рабочий стол. И не ещё один док.",
     subtitle:
-      "Fiple — это вторая панель управления вашим Mac: самый быстрый способ начать то, что вы собирались сделать, кем бы вы ни были.",
+      "Fiple становится второй панелью управления вашим Mac: самый быстрый способ начать то, что вы собирались сделать, кем бы вы ни были.",
     cards: [
       {
         title: "Для разработчиков",
-        body: "Редактор, терминал, localhost, документация и AI-ассистент — весь стек из одного рабочего пространства.",
+        body: "Редактор, терминал, localhost, документация и AI-ассистент, весь стек из одного рабочего пространства.",
       },
       {
         title: "Для креаторов",
-        body: "Дизайн-инструменты, ассеты, превью в браузере и экспорт — всё под рукой и готово к запуску.",
+        body: "Дизайн-инструменты, ассеты, превью в браузере и экспорт, всё под рукой и готово к запуску.",
       },
       {
         title: "Для концентрации",
-        body: "Запустите окружение для письма или учёбы одним тапом — и хватит искать по окнам.",
+        body: "Запустите окружение для письма или учёбы одним тапом, и хватит искать по окнам.",
       },
     ],
   },
   download: {
-    badge: "Скоро",
-    title: "Получите Fiple для Mac и iPhone первыми.",
-    subtitle: "Записывайтесь в бета-лист сейчас. Когда приложения выйдут, отсюда можно будет скачать напрямую.",
+    badge: "Уже доступно",
+    title: "Fiple вышел для Mac и iPhone.",
+    subtitle: "Одно универсальное приложение для Mac и iPhone. Скачайте бесплатно в App Store.",
+    appStore: "Скачать в App Store",
     emailAria: "Адрес эл. почты",
-    submitIdle: "В список ожидания",
-    submitting: "Добавляем…",
-    macSoon: "Скачать для Mac — скоро",
-    appStoreSoon: "App Store — скоро",
-    futureAria: "Будущие загрузки",
+    submitIdle: "Держите в курсе",
+    submitting: "Отправляем…",
     status: {
-      default: "Без спама — только бета-доступ и новости о запуске.",
-      emptyEmail: "Введите email, чтобы попасть в список ожидания.",
-      adding: "Добавляем вас в список ожидания…",
-      already: "Вы уже в списке. Мы напишем, когда откроется бета-доступ.",
-      success: "Вы в списке. Мы напишем, когда откроется бета-доступ.",
+      default: "Предпочитаете email? Иногда шлём новости о продукте, без спама.",
+      emptyEmail: "Введите email, чтобы получать новости.",
+      adding: "Подписываем вас…",
+      already: "Вы уже подписаны. Будем держать в курсе.",
+      success: "Вы подписаны. Расскажем, что дальше.",
       error: "Что-то пошло не так. Попробуйте ещё раз или напишите нам напрямую.",
     },
   },
   footer: {
     tagline:
       "Нативное приложение для Mac и iPhone, которое держит ваши рабочие пространства в одном тапе. Для тех, кто весь день переключает контекст.",
-    comingSoon: "Скоро · macOS и iPhone",
+    comingSoon: "Уже доступно · macOS и iPhone",
     pagesHeading: "Страницы",
     pageHome: "Главная",
     getItHeading: "Загрузка",
-    getWaitlist: "Список ожидания",
-    getMacSoon: "Mac — скоро",
-    getAppStoreSoon: "App Store — скоро",
+    getAppStore: "Скачать в App Store",
+    getUpdates: "Email-рассылка",
     legalHeading: "Правовое и поддержка",
     legalSupport: "Помощь и поддержка",
     legalPrivacy: "Политика конфиденциальности",
@@ -288,7 +282,7 @@ const kz: typeof en = {
     navHow: "Қалай жұмыс істейді",
     navProduct: "Мүмкіндіктер",
     navMac: "Mac қосымшасы",
-    waitlist: "Тізімге қосылу",
+    download: "Жүктеу",
   },
   hero: {
     badge: "Mac пен iPhone-ға арналған нативті қосымша",
@@ -296,8 +290,8 @@ const kz: typeof en = {
     titleLine2Pre: "қайта ",
     titleAccent: "ағыныңызда.",
     subtitle:
-      "Fiple iPhone-ды Mac-ты іске қосу пультіне айналдырады. Жұмыс кеңістіктерін, қосымшаларды және сайттарды бір түртумен ашыңыз — назарыңызды бұзбай.",
-    ctaPrimary: "Тізімге қосылу",
+      "Fiple iPhone-ды Mac-ты іске қосу пультіне айналдырады. Жұмыс кеңістіктерін, қосымшаларды және сайттарды бір түртумен ашыңыз, назарыңызды бұзбай.",
+    ctaPrimary: "App Store-дан жүктеу",
     ctaSecondary: "Қалай жұмыс істейтінін көру",
     tags: ["Секундтарда жұпталады", "Тіркелудің қажеті жоқ", "Сіздің желіңізде жұмыс істейді"],
   },
@@ -311,7 +305,7 @@ const kz: typeof en = {
     titleLine1: "Бір рет жүктеңіз. Бір рет жұптаңыз.",
     titleLine2: "Күн сайын іске қосыңыз.",
     subtitle:
-      "Барлық баптау — бұл жұптау. Екі құрылғы бір Wi-Fi желісінде болғанда, iPhone сіздің Mac-ты тауып, қысқа код арқылы жалғанады — аккаунтсыз және кабельсіз.",
+      "Барлық баптау жұптауға саяды. Екі құрылғы бір Wi-Fi желісінде болғанда, iPhone сіздің Mac-ты тауып, қысқа код арқылы жалғанады, аккаунтсыз әрі кабельсіз.",
     steps: [
       {
         title: "Fiple-ды Mac-қа орнатыңыз",
@@ -319,7 +313,7 @@ const kz: typeof en = {
       },
       {
         title: "iPhone-ды жұптаңыз",
-        body: "iPhone-да Fiple-ды ашыңыз — ол жергілікті желіден Mac-ты іздейді. Жұптау үшін 4 таңбалы кодты енгізіңіз.",
+        body: "iPhone-да Fiple-ды ашыңыз, ол жергілікті желіден Mac-ты іздейді. Жұптау үшін 4 таңбалы кодты енгізіңіз.",
       },
       {
         title: "Түртіңіз. Mac әрекет етеді.",
@@ -340,7 +334,7 @@ const kz: typeof en = {
       },
       {
         title: "Fiple Bar",
-        body: "Жеке қосымшаларды бекітіңіз — Telegram, VS Code, Claude, ChatGPT — бір түртумен лезде іске қосу үшін.",
+        body: "Telegram, VS Code, Claude, ChatGPT сияқты жеке қосымшаларды бекітіп, бір түртумен лезде іске қосыңыз.",
       },
       {
         title: "Құрылғылар",
@@ -352,9 +346,9 @@ const kz: typeof en = {
     eyebrow: "Не іске қосасыз",
     title: "Mac-тағы кез келген нәрсе iPhone-да бір түртуде.",
     features: [
-      { title: "Қосымшалар", body: "Кез келген Mac қосымшасын түрткен сәтте іске қосыңыз — доксыз, Cmd-Tab-сыз." },
+      { title: "Қосымшалар", body: "Кез келген Mac қосымшасын түрткен сәтте іске қосыңыз, доксыз әрі Cmd-Tab-сыз." },
       { title: "Сайттар", body: "Сақталған сайттарыңыз бен дашбордтарды тікелей браузерде ашыңыз." },
-      { title: "Жұмыс кеңістіктері", body: "Қосымшаларды және сайттарды біріктіріп — бүкіл жиынтықты бірден іске қосыңыз." },
+      { title: "Жұмыс кеңістіктері", body: "Қосымшаларды және сайттарды біріктіріп, бүкіл жиынтықты бірден іске қосыңыз." },
       { title: "Fiple Bar", body: "Ең қажет қосымшаларды бекітіп, бір түртумен іске қосыңыз." },
       { title: "Соңғылар", body: "Ең соңғы іске қосқаныңызға лезде оралыңыз." },
     ],
@@ -363,51 +357,48 @@ const kz: typeof en = {
     eyebrow: "Неге Fiple",
     title: "Қашықтағы жұмыс үстелі емес. Тағы бір док та емес.",
     subtitle:
-      "Fiple — Mac-ыңыз үшін екінші басқару беті: кім болсаңыз да, жасамақ болған ісіңізді бастаудың ең жылдам жолы.",
+      "Fiple сіздің Mac-ыңыз үшін екінші басқару беті болады: кім болсаңыз да, жасамақ болған ісіңізді бастаудың ең жылдам жолы.",
     cards: [
       {
         title: "Құрастырушыларға",
-        body: "Редактор, терминал, localhost, құжаттама және AI-көмекші — бүкіл стек бір жұмыс кеңістігінен.",
+        body: "Редактор, терминал, localhost, құжаттама және AI-көмекші, бүкіл стек бір жұмыс кеңістігінен.",
       },
       {
         title: "Креаторларға",
-        body: "Дизайн құралдары, ассеттер, браузердегі превью және экспорт — бәрі қолжетімді әрі іске қосуға дайын.",
+        body: "Дизайн құралдары, ассеттер, браузердегі превью және экспорт, бәрі қолжетімді әрі іске қосуға дайын.",
       },
       {
         title: "Шоғырлануға",
-        body: "Жазу немесе оқу ортасын бір түртумен бастаңыз — терезелерден іздеуді доғарыңыз.",
+        body: "Жазу немесе оқу ортасын бір түртумен бастаңыз, терезелерден іздеуді доғарыңыз.",
       },
     ],
   },
   download: {
-    badge: "Жақында",
-    title: "Fiple-ды Mac пен iPhone-ға бірінші болып алыңыз.",
-    subtitle: "Қазір бета-тізімге жазылыңыз. Қосымшалар шыққанда осы жерден тікелей жүктей аласыз.",
+    badge: "Қолжетімді",
+    title: "Fiple шықты Mac пен iPhone-ға.",
+    subtitle: "Mac пен iPhone-ға арналған бір әмбебап қосымша. App Store-дан тегін жүктеңіз.",
+    appStore: "App Store-дан жүктеу",
     emailAria: "Электрондық пошта",
-    submitIdle: "Тізімге қосылу",
-    submitting: "Қосылуда…",
-    macSoon: "Mac-қа жүктеу — жақында",
-    appStoreSoon: "App Store — жақында",
-    futureAria: "Болашақ жүктеулер",
+    submitIdle: "Хабардар етіп тұрыңыз",
+    submitting: "Жіберілуде…",
     status: {
-      default: "Спамсыз — тек бета-қатынас пен шығарылым жаңалықтары.",
-      emptyEmail: "Тізімге қосылу үшін email енгізіңіз.",
-      adding: "Сізді тізімге қосудамыз…",
-      already: "Сіз тізімдесіз. Бета-қатынас ашылғанда хат жібереміз.",
-      success: "Сіз тізімдесіз. Бета-қатынас ашылғанда хат жібереміз.",
+      default: "Email қалайсыз ба? Анда-санда өнім жаңалықтарын жібереміз, спамсыз.",
+      emptyEmail: "Жаңалықтар алу үшін email енгізіңіз.",
+      adding: "Сізді жазудамыз…",
+      already: "Сіз әлдеқашан жазылғансыз. Хабардар етіп тұрамыз.",
+      success: "Сіз жазылдыңыз. Не боларын хабарлап тұрамыз.",
       error: "Бірдеңе дұрыс болмады. Қайта көріңіз немесе бізге тікелей жазыңыз.",
     },
   },
   footer: {
     tagline:
       "Жұмыс кеңістіктеріңізді бір түртуде ұстайтын Mac пен iPhone-ға арналған нативті қосымша. Күні бойы контекст ауыстыратындарға арналған.",
-    comingSoon: "Жақында · macOS және iPhone",
+    comingSoon: "Қолжетімді · macOS және iPhone",
     pagesHeading: "Беттер",
     pageHome: "Басты бет",
     getItHeading: "Жүктеу",
-    getWaitlist: "Күту тізіміне",
-    getMacSoon: "Mac қосымшасы — жақында",
-    getAppStoreSoon: "App Store — жақында",
+    getAppStore: "App Store-дан жүктеу",
+    getUpdates: "Email жаңалықтары",
     legalHeading: "Құқық және қолдау",
     legalSupport: "Көмек және қолдау",
     legalPrivacy: "Құпиялылық саясаты",
