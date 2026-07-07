@@ -59,11 +59,11 @@ const en: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "Waitlist and email updates",
+        heading: "Email updates",
         blocks: [
-          { type: "p", text: "The Fiple website may offer an optional waitlist." },
-          { type: "p", text: "If you choose to join, we collect your email address to send product updates, beta invitations, and launch announcements." },
-          { type: "p", text: "Your email address is securely stored using Supabase, our service provider for operating the waitlist. We never sell or share your email address for advertising." },
+          { type: "p", text: "The Fiple website may offer an optional email updates list." },
+          { type: "p", text: "If you choose to subscribe, we collect your email address to send occasional product updates and announcements." },
+          { type: "p", text: "Your email address is securely stored using Supabase, our service provider for operating the email list. We never sell or share your email address for advertising." },
           { type: "p", text: "You may unsubscribe at any time using the unsubscribe link included in our emails or by contacting us directly. Upon request, we will delete your email address from our records." },
         ],
       },
@@ -258,11 +258,11 @@ const ru: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "Список ожидания и письма",
+        heading: "Email-рассылка",
         blocks: [
-          { type: "p", text: "На сайте Fiple может быть доступен необязательный список ожидания." },
-          { type: "p", text: "Если вы решите присоединиться, мы собираем ваш email, чтобы отправлять новости о продукте, приглашения в бету и анонсы запуска." },
-          { type: "p", text: "Ваш email безопасно хранится с помощью Supabase — нашего провайдера для работы списка ожидания. Мы никогда не продаём и не передаём ваш email для рекламы." },
+          { type: "p", text: "На сайте Fiple может быть доступна необязательная email-рассылка." },
+          { type: "p", text: "Если вы решите подписаться, мы собираем ваш email, чтобы иногда отправлять новости о продукте и анонсы." },
+          { type: "p", text: "Ваш email безопасно хранится с помощью Supabase, нашего провайдера для работы рассылки. Мы никогда не продаём и не передаём ваш email для рекламы." },
           { type: "p", text: "Вы можете отписаться в любой момент по ссылке отписки в наших письмах или связавшись с нами напрямую. По запросу мы удалим ваш email из наших записей." },
         ],
       },
@@ -306,8 +306,8 @@ const ru: Record<LegalKey, LegalDoc> = {
       {
         heading: "Описание сервиса",
         blocks: [
-          { type: "p", text: "Fiple — это приложение для Mac и iPhone, позволяющее с помощью iPhone запускать приложения и открывать сайты, а также восстанавливать настроенные пользователем рабочие пространства на сопряжённом Mac по локальной сети." },
-          { type: "p", text: "Рабочее пространство — это плитка, выполняющая одно или несколько таких действий." },
+          { type: "p", text: "Fiple является приложением для Mac и iPhone, которое позволяет с помощью iPhone запускать приложения и открывать сайты, а также восстанавливать настроенные пользователем рабочие пространства на сопряжённом Mac по локальной сети." },
+          { type: "p", text: "Рабочее пространство представляет собой плитку, выполняющую одно или несколько таких действий." },
         ],
       },
       {
@@ -457,11 +457,11 @@ const kz: Record<LegalKey, LegalDoc> = {
         ],
       },
       {
-        heading: "Күту тізімі және хаттар",
+        heading: "Email жаңалықтары",
         blocks: [
-          { type: "p", text: "Fiple сайтында міндетті емес күту тізімі қолжетімді болуы мүмкін." },
-          { type: "p", text: "Егер сіз қосылуды шешсеңіз, біз өнім жаңалықтарын, бетаға шақыруларды және шығарылым туралы хабарламаларды жіберу үшін электрондық поштаңызды жинаймыз." },
-          { type: "p", text: "Сіздің электрондық поштаңыз күту тізімін жүргізу үшін біздің қызмет провайдеріміз болып табылатын Supabase арқылы қауіпсіз сақталады. Біз сіздің электрондық поштаңызды жарнама үшін ешқашан сатпаймыз әрі бермейміз." },
+          { type: "p", text: "Fiple сайтында міндетті емес email-жаңалықтар тізімі қолжетімді болуы мүмкін." },
+          { type: "p", text: "Егер сіз жазылуды шешсеңіз, біз анда-санда өнім жаңалықтары мен хабарламаларды жіберу үшін электрондық поштаңызды жинаймыз." },
+          { type: "p", text: "Сіздің электрондық поштаңыз тізімді жүргізу үшін біздің қызмет провайдеріміз болып табылатын Supabase арқылы қауіпсіз сақталады. Біз сіздің электрондық поштаңызды жарнама үшін ешқашан сатпаймыз әрі бермейміз." },
           { type: "p", text: "Сіз кез келген уақытта біздің хаттарымыздағы жазылымнан бас тарту сілтемесі арқылы немесе бізге тікелей хабарласу арқылы жазылымнан бас тарта аласыз. Сұрау бойынша біз сіздің электрондық поштаңызды жазбаларымыздан жоямыз." },
         ],
       },
@@ -505,8 +505,8 @@ const kz: Record<LegalKey, LegalDoc> = {
       {
         heading: "Қызмет сипаттамасы",
         blocks: [
-          { type: "p", text: "Fiple — iPhone арқылы қолданбаларды іске қосуға және сайттарды ашуға, сондай-ақ жұпталған Mac-та пайдаланушы баптаған жұмыс кеңістіктерін жергілікті желі арқылы қалпына келтіруге мүмкіндік беретін Mac пен iPhone қолданбасы." },
-          { type: "p", text: "Жұмыс кеңістігі — осы әрекеттердің бірін немесе бірнешеуін орындайтын тақташа." },
+          { type: "p", text: "Fiple iPhone арқылы қолданбаларды іске қосуға және сайттарды ашуға, сондай-ақ жұпталған Mac-та пайдаланушы баптаған жұмыс кеңістіктерін жергілікті желі арқылы қалпына келтіруге мүмкіндік беретін Mac пен iPhone қолданбасы болып табылады." },
+          { type: "p", text: "Жұмыс кеңістігі осы әрекеттердің бірін немесе бірнешеуін орындайтын тақташа болып табылады." },
         ],
       },
       {
@@ -541,7 +541,7 @@ const kz: Record<LegalKey, LegalDoc> = {
         heading: "Зияткерлік меншік",
         blocks: [
           { type: "p", text: "Fiple, оның бренді, дизайны және бағдарламалық жасақтамасы қолданыстағы зияткерлік меншік туралы заңнамамен қорғалады әрі Диас Мақсатовтың немесе тиісті құқық иеленушілердің меншігі болып қала береді." },
-          { type: "p", text: "Apple — Apple Inc. компаниясының сауда белгісі. Fiple Apple Inc. компаниясымен байланысты емес әрі онымен мақұлданбаған." },
+          { type: "p", text: "Apple Apple Inc. компаниясының сауда белгісі болып табылады. Fiple Apple Inc. компаниясымен байланысты емес әрі онымен мақұлданбаған." },
         ],
       },
       {
