@@ -1,8 +1,9 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
-import { ArrowRight, Check } from "lucide-react";
+import { Apple, Check } from "lucide-react";
 import { supabase } from "../lib/supabase";
 import { useT } from "../lib/i18n";
+import { APP_STORE_URL } from "../lib/links";
 
 type SubmitState = "idle" | "submitting" | "success" | "error";
 type StatusKey = "default" | "emptyEmail" | "adding" | "already" | "success" | "error";
@@ -76,8 +77,20 @@ export function DownloadSection() {
             {t.download.subtitle}
           </p>
 
+          <div className="mt-8 flex justify-center">
+            <a
+              className="inline-flex min-h-[52px] items-center gap-2.5 rounded-xl bg-white px-7 text-[16px] font-semibold text-ink shadow-lift transition hover:bg-white/90 active:scale-[0.98]"
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Apple size={19} />
+              {t.download.appStore}
+            </a>
+          </div>
+
           <form
-            className="mx-auto mt-8 flex max-w-[520px] items-center gap-2 rounded-2xl border border-white/15 bg-white/[0.06] p-2 backdrop-blur-sm transition duration-200 focus-within:border-white/30 focus-within:bg-white/[0.09] focus-within:ring-4 focus-within:ring-white/10 max-sm:flex-col max-sm:gap-2.5"
+            className="mx-auto mt-5 flex max-w-[520px] items-center gap-2 rounded-2xl border border-white/15 bg-white/[0.06] p-2 backdrop-blur-sm transition duration-200 focus-within:border-white/30 focus-within:bg-white/[0.09] focus-within:ring-4 focus-within:ring-white/10 max-sm:flex-col max-sm:gap-2.5"
             onSubmit={handleSubmit}
           >
             <input
@@ -94,7 +107,6 @@ export function DownloadSection() {
               type="submit"
             >
               {submitState === "submitting" ? t.download.submitting : t.download.submitIdle}
-              {submitState !== "submitting" && <ArrowRight size={17} />}
             </button>
           </form>
 
@@ -107,15 +119,6 @@ export function DownloadSection() {
             {success && <Check size={15} />}
             {message}
           </p>
-
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5" aria-label={t.download.futureAria}>
-            <span className="rounded-xl border border-dashed border-white/20 px-4 py-2.5 font-mono text-[13px] text-white/45">
-              {t.download.macSoon}
-            </span>
-            <span className="rounded-xl border border-dashed border-white/20 px-4 py-2.5 font-mono text-[13px] text-white/45">
-              {t.download.appStoreSoon}
-            </span>
-          </div>
         </div>
       </div>
     </section>
