@@ -13,7 +13,7 @@ export const steps: Step[] = [
   {
     label: "02",
     title: "Pair your iPhone",
-    body: "Open Fiple on your iPhone — it scans your local network for your Mac. Enter the 4-digit code to pair.",
+    body: "Open Fiple on your iPhone. It scans your local network for your Mac. Enter the 4-digit code to pair.",
   },
   {
     label: "03",
