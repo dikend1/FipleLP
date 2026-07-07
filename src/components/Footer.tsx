@@ -1,5 +1,6 @@
 import icon from "../assets/fiple-icon.png";
 import { useT } from "../lib/i18n";
+import { APP_STORE_URL } from "../lib/links";
 
 export function Footer() {
   const t = useT();
@@ -32,9 +33,8 @@ export function Footer() {
           <div>
             <p className="mb-4 font-mono text-[11px] font-medium tracking-[0.12em] text-faint uppercase">{t.footer.getItHeading}</p>
             <ul className="grid gap-3 text-[15px] font-medium text-ink2">
-              <li><a className="transition hover:text-blue" href="#download">{t.footer.getWaitlist}</a></li>
-              <li><span className="text-faint">{t.footer.getMacSoon}</span></li>
-              <li><span className="text-faint">{t.footer.getAppStoreSoon}</span></li>
+              <li><a className="transition hover:text-blue" href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">{t.footer.getAppStore}</a></li>
+              <li><a className="transition hover:text-blue" href="#download">{t.footer.getUpdates}</a></li>
             </ul>
           </div>
           <div>

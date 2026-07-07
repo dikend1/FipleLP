@@ -1,5 +1,6 @@
 import icon from "../assets/fiple-icon.png";
 import { useT } from "../lib/i18n";
+import { APP_STORE_URL } from "../lib/links";
 import { LangToggle } from "./LangToggle";
 
 export function Header() {
@@ -19,10 +20,12 @@ export function Header() {
         <LangToggle />
         <a
           className="inline-flex items-center gap-2 rounded-xl bg-ink px-4 py-2.5 text-[15px] font-semibold whitespace-nowrap text-white transition hover:bg-ink2 active:scale-[0.98] max-sm:px-3.5 max-sm:text-[14px]"
-          href="#download"
+          href={APP_STORE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="size-1.5 rounded-full bg-green" aria-hidden="true" />
-          {t.header.waitlist}
+          {t.header.download}
         </a>
       </div>
     </header>
