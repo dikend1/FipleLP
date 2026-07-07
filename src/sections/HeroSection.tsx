@@ -1,6 +1,7 @@
-import { ArrowRight, Play } from "lucide-react";
+import { Apple, Play } from "lucide-react";
 import appHome from "../assets/app-home.webp";
 import { useT } from "../lib/i18n";
+import { APP_STORE_URL } from "../lib/links";
 
 export function HeroSection() {
   const t = useT();
@@ -27,10 +28,12 @@ export function HeroSection() {
         <div className="mt-8 flex flex-wrap items-center gap-3 max-[940px]:justify-center">
           <a
             className="group inline-flex min-h-[52px] items-center gap-2 rounded-xl bg-ink px-6 text-[16px] font-semibold text-white shadow-lift transition hover:bg-ink2 active:scale-[0.98]"
-            href="#download"
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            <Apple size={18} className="transition group-hover:-translate-y-0.5" />
             {t.hero.ctaPrimary}
-            <ArrowRight size={18} className="transition group-hover:translate-x-0.5" />
           </a>
           <a
             className="inline-flex min-h-[52px] items-center gap-2 rounded-xl border border-line bg-white px-5 text-[16px] font-semibold text-ink transition hover:border-ink/20 hover:shadow-card active:scale-[0.98]"
@@ -60,7 +63,7 @@ export function HeroSection() {
         <div className="relative animate-float [animation-delay:200ms]">
           <img
             src={appHome}
-            alt="Fiple iPhone app — connected MacBook Air, the Start Coding and Vibe workspaces, and the Fiple Bar"
+            alt="Fiple iPhone app, connected MacBook Air, the Start Coding and Vibe workspaces, and the Fiple Bar"
             className="relative z-[1] w-[286px] max-sm:w-[260px] [filter:drop-shadow(0_2px_6px_rgba(11,11,15,0.10))_drop-shadow(0_30px_45px_rgba(11,11,15,0.22))]"
             width={286}
             loading="eager"

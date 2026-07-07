@@ -28,7 +28,7 @@ export function MacShowcase() {
         <div className="overflow-hidden rounded-[14px] border border-line shadow-device max-sm:rounded-[10px]">
           <img
             src={appMac}
-            alt="Fiple for macOS — the Start Coding, Vibe, Productive, and Games workspaces, the Fiple Bar, Recent activity, and a connected iPhone"
+            alt="Fiple for macOS, showing the for work and for emails workspaces, the Fiple Bar, Recent activity, and a connected iPhone"
             className="block w-full"
             loading="lazy"
           />

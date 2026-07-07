@@ -25,7 +25,7 @@ export function HowItWorksSection() {
           <div className="absolute h-[70%] w-[70%] rounded-[40%] bg-[radial-gradient(circle,rgba(46,107,255,0.22),transparent_70%)] blur-2xl" aria-hidden="true" />
           <img
             src={appPairing}
-            alt="Fiple iPhone pairing screen — scanning the local network for your Mac, with a 4-digit code field"
+            alt="Fiple iPhone pairing screen, scanning the local network for your Mac, with a 4-digit code field"
             className="relative z-[1] w-[280px] max-sm:w-[256px] [filter:drop-shadow(0_2px_6px_rgba(11,11,15,0.10))_drop-shadow(0_30px_45px_rgba(11,11,15,0.22))]"
             width={280}
             loading="lazy"
