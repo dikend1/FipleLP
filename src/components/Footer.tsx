@@ -34,7 +34,7 @@ export function Footer() {
             <p className="mb-4 font-mono text-[11px] font-medium tracking-[0.12em] text-faint uppercase">{t.footer.getItHeading}</p>
             <ul className="grid gap-3 text-[15px] font-medium text-ink2">
               <li><a className="transition hover:text-blue" href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">{t.footer.getAppStore}</a></li>
-              <li><a className="transition hover:text-blue" href={MAC_DOWNLOAD_URL}>{t.footer.getMacDirect}</a></li>
+              <li><a className="transition hover:text-blue" href={MAC_DOWNLOAD_URL} download>{t.footer.getMacDirect}</a></li>
               <li><a className="transition hover:text-blue" href="#download">{t.footer.getUpdates}</a></li>
             </ul>
           </div>
