@@ -7,7 +7,7 @@ function downloadRedirect(): Plugin {
   const handler = (server: ViteDevServer | PreviewServer) => {
     server.middlewares.use("/download", (_req, res) => {
       res.statusCode = 307;
-      res.setHeader("Location", "/downloads/Fiple-1.1.0-mac.zip");
+      res.setHeader("Location", "/downloads/Fiple-1.1.0-mac.zip?v=94e240aa");
       res.end();
     });
   };
