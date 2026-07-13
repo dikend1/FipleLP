@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 
-export type Route = "home" | "privacy" | "terms" | "support";
+export type Route = "home" | "privacy" | "terms" | "support" | "download";
 
 const pathMap: Record<string, Route> = {
   "/privacy": "privacy",
   "/terms": "terms",
   "/support": "support",
+  "/download": "download",
 };
 
 const ROUTE_EVENT = "fiple:routechange";

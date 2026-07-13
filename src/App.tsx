@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { legalDocs } from "./data/legal";
 import { useLang } from "./lib/i18n";
 import { useRoute } from "./lib/router";
+import { DownloadPage } from "./pages/DownloadPage";
 import { LegalPage } from "./pages/LegalPage";
 import { DownloadSection } from "./sections/DownloadSection";
 import { HeroSection } from "./sections/HeroSection";
@@ -35,6 +36,15 @@ export default function App() {
     });
     return () => cancelAnimationFrame(id);
   }, [route]);
+
+  if (route === "download") {
+    return (
+      <>
+        <DownloadPage />
+        <Analytics />
+      </>
+    );
+  }
 
   if (route !== "home") {
     return (

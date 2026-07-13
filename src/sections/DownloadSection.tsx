@@ -90,7 +90,6 @@ export function DownloadSection() {
             <a
               className="inline-flex min-h-[52px] items-center gap-2.5 rounded-xl border border-white/20 bg-white/10 px-6 text-[16px] font-semibold text-white transition hover:bg-white/15 active:scale-[0.98]"
               href={MAC_DOWNLOAD_URL}
-              download
             >
               <Download size={18} />
               {t.download.macDirect}
