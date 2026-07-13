@@ -136,6 +136,20 @@ const en = {
     back: "Back to home",
     updated: "Last updated",
   },
+  downloadPage: {
+    eyebrow: "Download",
+    title: "Fiple for Mac is downloading…",
+    subtitle: "The full version — with Terminal.",
+    ifNotStarted: "If the download didn't start,",
+    retry: "click here",
+    stepsHeading: "Install in three steps",
+    steps: [
+      "Open the downloaded Fiple-1.1.0-mac.zip — Fiple.app will appear.",
+      "Drag Fiple into your Applications folder (replace the old version).",
+      "Launch Fiple → Settings → Terminal → enable it and set a password — the Terminal card on your iPhone comes alive on its own.",
+    ],
+    note: "Notarized by Apple. Requires macOS 14 or later.",
+  },
   langToggle: {
     aria: "Language",
   },
@@ -276,6 +290,20 @@ const ru: typeof en = {
     back: "На главную",
     updated: "Обновлено",
   },
+  downloadPage: {
+    eyebrow: "Загрузка",
+    title: "Fiple для Mac скачивается…",
+    subtitle: "Полная версия — с Терминалом.",
+    ifNotStarted: "Если скачивание не началось,",
+    retry: "нажмите сюда",
+    stepsHeading: "Установка за три шага",
+    steps: [
+      "Откройте скачанный Fiple-1.1.0-mac.zip — появится Fiple.app.",
+      "Перетащите Fiple в папку «Программы» (замените старую версию).",
+      "Запустите Fiple → Settings → Terminal → включите и задайте пароль — карточка Terminal на iPhone оживёт сама.",
+    ],
+    note: "Приложение нотаризовано Apple. Требуется macOS 14 или новее.",
+  },
   langToggle: {
     aria: "Язык",
   },
@@ -415,6 +443,20 @@ const kz: typeof en = {
   legalPage: {
     back: "Басты бетке",
     updated: "Жаңартылды",
+  },
+  downloadPage: {
+    eyebrow: "Жүктеу",
+    title: "Fiple Mac үшін жүктелуде…",
+    subtitle: "Толық нұсқа — Терминалмен бірге.",
+    ifNotStarted: "Жүктеу басталмаса,",
+    retry: "мына жерді басыңыз",
+    stepsHeading: "Үш қадаммен орнату",
+    steps: [
+      "Жүктелген Fiple-1.1.0-mac.zip файлын ашыңыз — Fiple.app пайда болады.",
+      "Fiple-ді «Программалар» (Applications) қалтасына сүйреңіз (ескі нұсқаны алмастырыңыз).",
+      "Fiple-ді іске қосыңыз → Settings → Terminal → қосып, құпиясөз орнатыңыз — iPhone-дағы Terminal карточкасы өзі жанданады.",
+    ],
+    note: "Қосымша Apple тарапынан нотаризацияланған. macOS 14 немесе одан жаңасы қажет.",
   },
   langToggle: {
     aria: "Тіл",

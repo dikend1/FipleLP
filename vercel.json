@@ -1,11 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/download",
-      "destination": "/downloads/Fiple-1.1.0-mac.zip?v=95ad2d28",
-      "permanent": false
-    }
-  ],
   "headers": [
     {
       "source": "/downloads/(.*)",
