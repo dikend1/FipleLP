@@ -1,9 +1,9 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
-import { Apple, Check } from "lucide-react";
+import { Apple, Check, Download } from "lucide-react";
 import { supabase } from "../lib/supabase";
 import { useT } from "../lib/i18n";
-import { APP_STORE_URL } from "../lib/links";
+import { APP_STORE_URL, MAC_DOWNLOAD_URL } from "../lib/links";
 
 type SubmitState = "idle" | "submitting" | "success" | "error";
 type StatusKey = "default" | "emptyEmail" | "adding" | "already" | "success" | "error";
@@ -77,7 +77,7 @@ export function DownloadSection() {
             {t.download.subtitle}
           </p>
 
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
               className="inline-flex min-h-[52px] items-center gap-2.5 rounded-xl bg-white px-7 text-[16px] font-semibold text-ink shadow-lift transition hover:bg-white/90 active:scale-[0.98]"
               href={APP_STORE_URL}
@@ -86,6 +86,13 @@ export function DownloadSection() {
             >
               <Apple size={19} />
               {t.download.appStore}
+            </a>
+            <a
+              className="inline-flex min-h-[52px] items-center gap-2.5 rounded-xl border border-white/20 bg-white/10 px-6 text-[16px] font-semibold text-white transition hover:bg-white/15 active:scale-[0.98]"
+              href={MAC_DOWNLOAD_URL}
+            >
+              <Download size={18} />
+              {t.download.macDirect}
             </a>
           </div>
 
