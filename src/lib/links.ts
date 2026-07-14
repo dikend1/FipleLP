@@ -6,4 +6,4 @@ export const MAC_DOWNLOAD_URL = "/download";
 
 // The actual file. Bump ?v= to the new build's hash when replacing the zip,
 // or Cloudflare keeps serving the cached old build for hours.
-export const MAC_DOWNLOAD_FILE_URL = "/downloads/Fiple-1.1.0.dmg?v=e5317e0d";
+export const MAC_DOWNLOAD_FILE_URL = "/downloads/Fiple-1.1.0.dmg?v=628181b4";
