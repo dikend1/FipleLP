@@ -1,14 +1,14 @@
-import { AppWindow, Globe, History, LayoutGrid, Pin, Zap } from "lucide-react";
+import { AppWindow, Globe, LayoutGrid, Pin, SquareTerminal, Trash2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useT } from "../lib/i18n";
 
 const featureStyles: { Icon: LucideIcon; tint: string }[] = [
   { Icon: AppWindow, tint: "bg-blueSoft text-blue" },
   { Icon: Globe, tint: "bg-greenSoft text-green" },
-  { Icon: Zap, tint: "bg-blueSoft text-blue" },
-  { Icon: LayoutGrid, tint: "bg-greenSoft text-green" },
-  { Icon: Pin, tint: "bg-blueSoft text-blue" },
-  { Icon: History, tint: "bg-greenSoft text-green" },
+  { Icon: LayoutGrid, tint: "bg-blueSoft text-blue" },
+  { Icon: Pin, tint: "bg-greenSoft text-green" },
+  { Icon: Trash2, tint: "bg-blueSoft text-blue" },
+  { Icon: SquareTerminal, tint: "bg-greenSoft text-green" },
 ];
 
 export function ProductSection() {

@@ -14,10 +14,10 @@ const en = {
     titleLine2Pre: "into your ",
     titleAccent: "flow.",
     subtitle:
-      "Fiple turns your iPhone into a launcher for your Mac. Open workspaces, apps, and sites in one tap, without breaking focus.",
+      "Fiple turns your iPhone into a command surface for your Mac: launch apps, sites, and workspaces, triage files, even run a terminal — in one tap, without breaking focus.",
     ctaPrimary: "Download on the App Store",
     ctaSecondary: "See how it works",
-    tags: ["Pairs in seconds", "No account to try", "Works over your network"],
+    tags: ["Pairs in seconds", "No account to try", "Local network, no tracking"],
   },
   demo: {
     beats: ["Tap on iPhone", "Mac launches instantly", "Back to your flow"],
@@ -67,14 +67,15 @@ const en = {
     ],
   },
   product: {
-    eyebrow: "What you launch",
+    eyebrow: "What Fiple does",
     title: "Anything on your Mac, one tap away on your iPhone.",
     features: [
       { title: "Apps", body: "Launch any Mac app the instant you tap it, with no Dock or Cmd-Tab." },
       { title: "Websites", body: "Open your saved sites and dashboards straight in your browser." },
       { title: "Workspaces", body: "Bundle apps and sites together, then run the whole set at once." },
       { title: "Fiple Bar", body: "Pin your most-used single apps for true one-tap launches." },
-      { title: "Recent", body: "Jump right back to whatever you launched last." },
+      { title: "Smart Trash", body: "Triage stale files from your phone: swipe to trash or keep, with undo. Everything goes to the macOS Trash, nothing is deleted for good." },
+      { title: "Remote Terminal", body: "A full interactive Mac terminal on your iPhone, over its own encrypted channel. In the direct-download version only." },
     ],
   },
   useCases: {
@@ -168,10 +169,10 @@ const ru: typeof en = {
     titleLine2Pre: "снова в ",
     titleAccent: "потоке.",
     subtitle:
-      "Fiple превращает ваш iPhone в пульт запуска для Mac. Открывайте рабочие пространства, приложения и сайты одним касанием, не отвлекаясь от дела.",
+      "Fiple превращает iPhone в пульт управления вашим Mac: запускайте приложения, сайты и рабочие пространства, разбирайте файлы и даже открывайте терминал — одним касанием, не отвлекаясь от дела.",
     ctaPrimary: "Скачать в App Store",
     ctaSecondary: "Как это работает",
-    tags: ["Подключение за секунды", "Без регистрации", "Работает по вашей сети"],
+    tags: ["Подключение за секунды", "Без регистрации", "Локальная сеть, без трекинга"],
   },
   demo: {
     beats: ["Тап на iPhone", "Mac запускает мгновенно", "Снова в потоке"],
@@ -221,14 +222,15 @@ const ru: typeof en = {
     ],
   },
   product: {
-    eyebrow: "Что вы запускаете",
+    eyebrow: "Что умеет Fiple",
     title: "Что угодно на вашем Mac в одном тапе на iPhone.",
     features: [
       { title: "Приложения", body: "Запускайте любое приложение Mac в момент тапа, без дока и Cmd-Tab." },
       { title: "Сайты", body: "Открывайте сохранённые сайты и дашборды прямо в браузере." },
       { title: "Рабочие пространства", body: "Соберите приложения и сайты вместе и запускайте весь набор сразу." },
       { title: "Fiple Bar", body: "Закрепите самые нужные приложения для запуска в один тап." },
-      { title: "Недавние", body: "Мгновенно вернитесь к тому, что запускали последним." },
+      { title: "Smart Trash", body: "Разбирайте залежавшиеся файлы с телефона: свайп — в корзину или оставить, с отменой. Всё уходит в Корзину macOS, ничего не удаляется навсегда." },
+      { title: "Remote Terminal", body: "Полноценный интерактивный терминал Mac на iPhone по отдельному зашифрованному каналу. Только в версии, скачанной с сайта." },
     ],
   },
   useCases: {
@@ -322,10 +324,10 @@ const kz: typeof en = {
     titleLine2Pre: "қайта ",
     titleAccent: "ағыныңызда.",
     subtitle:
-      "Fiple iPhone-ды Mac-ты іске қосу пультіне айналдырады. Жұмыс кеңістіктерін, қосымшаларды және сайттарды бір түртумен ашыңыз, назарыңызды бұзбай.",
+      "Fiple iPhone-ды Mac-ты басқару пультіне айналдырады: қосымшаларды, сайттарды және жұмыс кеңістіктерін іске қосыңыз, файлдарды сұрыптаңыз, тіпті терминал ашыңыз — бір түртумен, назарыңызды бұзбай.",
     ctaPrimary: "App Store-дан жүктеу",
     ctaSecondary: "Қалай жұмыс істейтінін көру",
-    tags: ["Секундтарда жұпталады", "Тіркелудің қажеті жоқ", "Сіздің желіңізде жұмыс істейді"],
+    tags: ["Секундтарда жұпталады", "Тіркелудің қажеті жоқ", "Жергілікті желі, трекингсіз"],
   },
   demo: {
     beats: ["iPhone-да түртіңіз", "Mac бірден іске қосылады", "Қайта ағыныңызда"],
@@ -375,14 +377,15 @@ const kz: typeof en = {
     ],
   },
   product: {
-    eyebrow: "Не іске қосасыз",
+    eyebrow: "Fiple не істей алады",
     title: "Mac-тағы кез келген нәрсе iPhone-да бір түртуде.",
     features: [
       { title: "Қосымшалар", body: "Кез келген Mac қосымшасын түрткен сәтте іске қосыңыз, доксыз әрі Cmd-Tab-сыз." },
       { title: "Сайттар", body: "Сақталған сайттарыңыз бен дашбордтарды тікелей браузерде ашыңыз." },
       { title: "Жұмыс кеңістіктері", body: "Қосымшаларды және сайттарды біріктіріп, бүкіл жиынтықты бірден іске қосыңыз." },
       { title: "Fiple Bar", body: "Ең қажет қосымшаларды бекітіп, бір түртумен іске қосыңыз." },
-      { title: "Соңғылар", body: "Ең соңғы іске қосқаныңызға лезде оралыңыз." },
+      { title: "Smart Trash", body: "Ескі файлдарды телефоннан сұрыптаңыз: свайп — Себетке немесе қалдыру, болдырмау мүмкіндігімен. Барлығы macOS Себетіне түседі, ештеңе біржола жойылмайды." },
+      { title: "Remote Terminal", body: "iPhone-да Mac-тың толыққанды интерактивті терминалы, бөлек шифрланған арна арқылы. Тек сайттан жүктелген нұсқада." },
     ],
   },
   useCases: {
