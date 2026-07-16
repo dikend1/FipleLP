@@ -63,8 +63,8 @@ export function HeroSection() {
         <div className="relative animate-float [animation-delay:200ms]">
           <img
             src={appHome}
-            alt="Fiple iPhone app, connected MacBook Air, the Start Coding and Vibe workspaces, and the Fiple Bar"
-            className="relative z-[1] w-[286px] max-sm:w-[260px] [filter:drop-shadow(0_2px_6px_rgba(11,11,15,0.10))_drop-shadow(0_30px_45px_rgba(11,11,15,0.22))]"
+            alt="Fiple iPhone app, connected MacBook Air, the Code and Work workspaces, and the Fiple Bar"
+            className="relative z-[1] w-[286px] rounded-[44px] max-sm:w-[260px] max-sm:rounded-[40px] [filter:drop-shadow(0_2px_6px_rgba(11,11,15,0.10))_drop-shadow(0_30px_45px_rgba(11,11,15,0.22))]"
             width={286}
             loading="eager"
           />
